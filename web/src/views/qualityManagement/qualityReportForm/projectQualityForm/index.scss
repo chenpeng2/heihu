@@ -1,0 +1,18 @@
+.list {
+  margin: 0 20px;
+  .reset {
+    display: inline-block;
+    color: $fontSub;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .exportTip {
+    color: $fontSub;
+    margin-left: 20px;
+    display: inline-block;
+  }
+  .bottom {
+    margin-top: 30px;
+    color: $fontSub;
+  }
+}

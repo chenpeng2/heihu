@@ -1,0 +1,55 @@
+.notificationDropdownBadgeContainer {
+  display: inline-block;
+  //width: 200px;
+  text-align: right;
+  :global {
+    .ant-badge {
+      vertical-align: baseline;
+      .ant-badge-count {
+        left: 10px;
+        transform: scale(0.8, 0.8);
+      }
+    }
+  }
+}
+
+.notificationDropdown {
+  :global {
+    top: 35px !important;
+    .ant-card-body {
+      padding: 0px;
+      height: 100%;
+    }
+    .ant-card {
+      border-bottom: 1px solid #F1F2F5;
+      height: 112px;
+      width: 400px;
+      cursor: pointer;
+    }
+    & .ant-card:last-child {
+      padding: 0;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: none;
+      .ant-card-body {
+        padding: 0;
+      }
+    }
+    .ant-popover-arrow {
+      left: 70% !important;
+    }
+    .ant-popover-inner-content .ant-menu-vertical {
+      border-right: none;
+    }
+    .ant-popover-title {
+      height: 50px;
+      vertical-align: middle;
+      padding: 9px 20px;
+      border-bottom: 1px solid #F1F2F5;
+    }
+    .ant-popover-inner-content {
+      padding: 0;
+    }
+  }
+}

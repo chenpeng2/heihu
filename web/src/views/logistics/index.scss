@@ -1,0 +1,42 @@
+.footer {
+  margin-left: 120px;
+  margin-top: 30px;
+  .cancel {
+    width: 114px;
+    margin-right: 60px;
+  }
+  .ok {
+    width: 114px;
+  }
+}
+
+
+.itemList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 40px 20px 40px;
+  .item {
+    width: 50%;
+    display: flex;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    .label {
+      text-align: right;
+      opacity: 0.6;
+      width: 100px;
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .value {
+      word-break: break-all;
+      display: inline-block;
+      flex: 1;
+    }
+  }
+}
+
+.itemLineHeight {
+  display: inline-block;
+  margin-bottom: 10px;
+}

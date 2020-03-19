@@ -1,0 +1,47 @@
+.listContainer {
+  border-top: 1px solid $border;
+}
+.header {
+  margin: 20px;
+  font-size: 16px;
+}
+
+.form {
+  margin-left: 80px;
+}
+
+.basicOperation {
+  float: right;
+  & > * {
+    margin: 0 10px;
+  }
+}
+
+.row {
+  margin-bottom: 20px;
+  display: flex;
+  .key {
+    display: inline-block;
+    margin-right: 20px;
+    width: 150px;
+    text-align: right;
+    color: $fontSub;
+  }
+  .desc {
+    margin-right: 20px;
+    flex: 1;
+    word-break: break-word;
+  }
+}
+
+.tab {
+  border: 1px solid $border;
+  margin: 20px;
+  .title {
+    font-size: 14px;
+    border-bottom: 1px solid $border;
+    padding: 6px;
+    background: $grey;
+    margin-bottom: 20px;
+  }
+}

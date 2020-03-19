@@ -1,0 +1,93 @@
+.listContainer {
+  border-top: 1px solid $border;
+}
+.header {
+  margin: 20px;
+  font-size: 16px;
+}
+
+.item {
+  color: $primary;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid $borderGrey;
+  padding-left: 25px;
+}
+
+.form {
+  margin-left: 80px;
+}
+
+.basicOperation {
+  position: absolute;
+  right: 40px;
+  top: 70px;
+  top & > * {
+    margin: 0 10px;
+  }
+}
+
+.row {
+  margin-bottom: 20px;
+  display: flex;
+  .key {
+    display: inline-block;
+    margin-right: 20px;
+    width: 150px;
+    text-align: right;
+    color: $fontSub;
+  }
+  .desc {
+    margin-right: 20px;
+    flex: 1;
+    word-break: break-word;
+  }
+}
+
+.tab {
+  border: 1px solid $border;
+  margin: 20px;
+  .title {
+    font-size: 12px;
+    border-bottom: 1px solid $border;
+    padding: 6px;
+    padding-left: 20px;
+    background: $grey;
+    margin-bottom: 20px;
+  }
+}
+
+.deviceDownTime {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  .footer {
+    margin-left: 160px;
+    margin-top: 16px;
+    position: absolute;
+    transform: translate(-70px, 28px);
+    .cancel {
+      width: 114px;
+      margin-right: 60px;
+    }
+    .ok {
+      width: 114px;
+    }
+  }
+  :global {
+    .ant-table-thead tr:first-child th span {
+      margin-left: 20px;
+    }
+    .ant-table-placeholder {
+      display: none;
+    }
+    .relay-modal .ant-modal-body {
+      padding-bottom: 50px;
+    }
+    .ant-table-tbody > tr > td {
+      padding-left: 30px;
+    }
+    .tableContainer___31DBS {
+      margin: 0 0 0 20px;
+    }
+  }
+}

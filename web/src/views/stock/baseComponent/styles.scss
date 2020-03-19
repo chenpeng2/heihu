@@ -1,0 +1,11 @@
+.deliverStorageSelect{
+  :global {
+    .ant-input{
+      position: absolute;
+      width: 96.5%;
+      left: 4px;
+      top: 5px;
+      border-radius: 4px;
+    }
+  }
+}

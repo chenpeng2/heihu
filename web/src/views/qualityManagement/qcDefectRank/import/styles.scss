@@ -1,0 +1,21 @@
+.searchHeader {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  color: $fontSub;
+  & > * {
+    margin-right: 10px;
+  }
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-form-item-label {
+      width: unset;
+    }
+  }
+}
+.detailLogHeader {
+  margin: 20px;
+  font-size: 16px;
+}

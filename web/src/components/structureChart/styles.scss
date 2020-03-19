@@ -1,0 +1,49 @@
+:global {
+  .orgchart {
+    background-image: none;
+    display: block;
+    overflow: auto;
+
+    .node {
+      margin: 0 5px;
+
+      .title {
+        background-color: #0dc7a3;
+      }
+
+      .content {
+        background-color: #0dc7a3;
+        color: #fff;
+        border: none;
+      }
+
+      &:hover {
+        z-index: 1;
+      }
+    }
+
+    tr.lines {
+      td {
+        .downLine {
+          background-color: #0dc7a3;
+        }
+
+        &.leftLine {
+          border-left: 1px solid #0dc7a3;
+        }
+
+        &.topLine {
+          border-top: 2px solid #0dc7a3;
+        }
+
+        &.rightLine {
+          border-right: 1px solid #0dc7a3;
+        }
+
+        &.bottomLine {
+          border-bottom: 2px solid #0dc7a3;
+        }
+      }
+    }
+  }
+}

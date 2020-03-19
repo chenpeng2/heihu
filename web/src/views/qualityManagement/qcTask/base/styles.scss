@@ -1,0 +1,14 @@
+body {
+  .qcReportAuditList {
+    :global {
+      .ant-form-item {
+        margin-top: 15px;
+      }
+      .ant-form-item-label {
+        width: 24px;
+        min-width: 24px;
+        margin: 0 10px 0 -15px;
+      }
+    }
+  }
+}

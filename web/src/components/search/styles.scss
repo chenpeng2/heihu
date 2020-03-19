@@ -1,0 +1,17 @@
+.searchContainer{
+  .ant-input-preSuffix-wrapper{
+    .ant-input-search{
+      outline: none;
+      &:hover{
+        border: 1px solid #0DC7A3;
+      }
+      &:active {
+        border: 1px solid #0DC7A3;
+      }
+      &:focus {
+        border: 1px solid #0DC7A3;
+        box-shadow: #0DC7A3;
+      }
+    }
+  }
+}

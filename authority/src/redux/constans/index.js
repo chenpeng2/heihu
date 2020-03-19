@@ -1,0 +1,5 @@
+export const GET_USER_INFO = 'LOGIN/GET_USER_INFO';
+
+export const SET_OPEN_STATE = 'SET_OPEN_STATE';
+export const CANCEL_OPEN_STATE = 'CANCEL_OPEN_STATE';
+

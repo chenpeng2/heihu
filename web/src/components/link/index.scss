@@ -1,0 +1,35 @@
+.link {
+  display: inline-block;
+  cursor: pointer;
+}
+.link-primary {
+  color: $primary;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.link-grey {
+  color: $fontSub;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.link-error {
+  color: $errorRed;
+  &:hover {
+    color: $errorRed;
+    opacity: 0.8;
+  }
+}
+
+.linkGroup {
+  .link {
+    margin-right: 20px;
+  }
+}
+
+button .link {
+  color: #fff;
+}

@@ -1,0 +1,41 @@
+.prompt {
+  line-height: 17px;
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: flex-end;
+  margin-right: 11px;
+}
+.gcTextArea:hover {
+  border-color: #22c78d;
+  transition: all 0.3s;
+}
+.gcTextAreaFocus {
+  border: 1px solid #22c78d;
+  border-radius: 1px;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(2, 185, 128, 0.2);
+  transition: all 0.3s;
+}
+.gcTextArea {
+  :global {
+    .ant-input:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+    .ant-input:hover {
+      border-color: transparent;
+    }
+  }
+  border: 1px solid #D3D8E3;
+}
+.gcTextAreaFocus {
+  :global {
+    .ant-input:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+    .ant-input:hover {
+      border-color: transparent;
+    }
+  }
+}

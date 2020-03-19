@@ -1,0 +1,19 @@
+.productionCapacityList {
+  :global {
+    .ant-table td {
+      white-space: nowrap;
+    }
+  }
+}
+.listColumn {
+  min-width: 115px !important;
+}
+.reportStyle {
+  :global {
+    .ant-select-selection {}
+    .ant-select-selection--multiple {
+      max-height: 80px;
+      overflow-y: scroll;
+    }
+  }
+}

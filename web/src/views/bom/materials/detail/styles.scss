@@ -1,0 +1,74 @@
+.materialDetail {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 400;
+
+  :global {
+    .anticon-exclamation-circle:before {
+      content: '\E62E';
+      color: $error;
+    }
+    .ant-btn-sm {
+      color: $content;
+    }
+    .ant-btn-primary {
+      display: none;
+    }
+    .ant-popover-title {
+      border-bottom: none;
+      padding: 5px 7px 4px;
+    }
+    .ant-popover-message {
+      padding: 4px 0 5px;
+    }
+    .ant-tooltip-inner {
+      max-width: 406px;
+      padding: 6px 8px;
+      background-color: $white;
+      min-height: 32px;
+    }
+    .ant-tooltip-placement-rightTop .ant-tooltip-arrow {
+      border-right-color: $white;
+    }
+    .ant-tooltip-placement-top .ant-tooltip-arrow {
+      border-top-color: $white;
+    }
+    .ant-tooltip-placement-rightBottom .ant-tooltip-arrow {
+      border-right-color: $white;
+    }
+    .ant-popover-message-title {
+      word-break: break-all;
+    }
+  }
+}
+
+.index {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding-left: 4px;
+  line-height: 16px;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+}
+
+.header {
+  font-size: 16px;
+  margin: 0;
+}
+
+.stopUseStatusLabel:hover {
+  background-color: rgba($error, 0.8);
+}
+.statusLabel {
+  color: $white;
+  text-align: center;
+  border-radius: 20px;
+  display: inline-block;
+  margin-left: 17px;
+  cursor: pointer;
+  width: 41px;
+}
+.statusLabel:hover {
+  background-color: rgba($primary, 0.8);
+}

@@ -1,0 +1,680 @@
+//chenpeng 2019-9-15
+//公共样式
+@roboto-font-path: '../fonts';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@commonColor: #00af98;
+.view-mode{
+  padding: 16px 48px;
+  font-size: 19px;
+  color: #0854A1;
+  .ant-dropdown-trigger{
+    cursor: pointer;
+  }
+}
+.clearfix:after {
+    content: " ";
+    display: block;;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.float-lef{
+  float: left;
+}
+.float-rig{
+  float: right;
+}
+.ant-btn-primary{
+  background-color: #00af98;
+  border-color: #00af98;
+}
+.ant-btn-primary:hover{
+  background-color: #00af98;
+  border-color: #00af98;
+}
+.ant-modal-footer .ant-btn-primary{
+  background-color: #00af98;
+  border-color: #00af98;
+}
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .login-form-button,#components-form-demo-normal-login .reset-form-button {
+  width: 100%;
+}
+#components-form-demo-normal-login .ant-form-item-control{
+  text-align: left;
+  .ant-checkbox-wrapper{
+    padding-left: 0px;
+  }
+}
+.ulp-container .ant-checkbox-wrapper{
+  padding: 0px;
+  color:#fff;
+}
+.ulp-container .ant-form-item{
+  color:#fff;
+}
+/*修改滚动条样式*/
+.real-time-monitoring .list ul::-webkit-scrollbar{
+  width:6px;
+  height:10px;
+  /**/
+}
+.real-time-monitoring .list ul::-webkit-scrollbar-track{
+  background: #ffffff;
+  border-radius:2px;
+}
+.real-time-monitoring .list ul::-webkit-scrollbar-thumb{
+  background: #bfbfbf;
+  border-radius:10px;
+}
+.real-time-monitoring .list ul::-webkit-scrollbar-thumb:hover{
+  background: #333;
+}
+.real-time-monitoring .list ul::-webkit-scrollbar-corner{
+  background: #179a16;
+}
+.flex-space-between{
+  display: flex;
+  justify-content:space-between;
+}
+.flex-flex-start{
+  display: flex;
+  justify-content:flex-start;
+}
+.ant-btn-primary:hover, .ant-btn-primary:focus{
+  background-color: #00af98;
+  border-color: #00af98;
+}
+.ant-calendar-picker-container{
+  z-index: 1009;
+}
+a[disabled]{
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.ant-spin{
+  .ant-spin-dot-item{
+    background-color:#00af98
+  }
+}
+.back-color{
+  background: #ececec;
+}
+.ant-anchor-ink{
+  display: none;
+}
+.ant-anchor-link{
+  padding:0;
+}
+.ant-anchor-wrapper{
+  background-color: transparent;
+  height: 40px;
+  overflow: hidden;
+}
+.device-param-detail{
+  .all-tabs{
+    margin-top:8px;
+    padding: 8px 0 0;
+    color: #6A6D70;
+    //box-shadow: inset 0 -1px 0 0 #D9D9D9;
+    .ant-tabs-bar{
+      padding-left: 32px;
+      margin-bottom:0px;
+      background: #FFFFFF;
+      border-bottom:none;
+      box-shadow: 0 0 2px 0 rgba(0,0,0,0.30), inset 0 -1px 0 0 #D9D9D9;
+    }
+    .table{
+      .MuiToolbar-root{
+        padding-left: 0px;
+        .MuiTypography-h6{
+          font-size: 16px!important;
+          color: #32363A;
+          font-weight: normal!important;
+          padding: 8px 0;
+          display: inline-block;
+          height: 100%;
+          padding-right: 12px;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+.all-contents{
+  .content-item{
+    .head{
+      padding: 0px 48px 0px;
+      font-size: 18px;
+      color: #32363A;
+      //box-shadow: inset 0 -1px 0 0 #D9D9D9;
+      span{
+        list-style: none;
+        display: inline-block;
+        margin: 8px 0;
+        padding: 8px 0;
+        border-bottom: 1px solid #6A6D70;
+      }
+    }
+    //异常设备参数和详情
+    .head2{
+      box-shadow: inset 0 -1px 0 0 #D9D9D9;
+      margin: 0px 48px 0px;
+      font-size: 18px;
+      color: #32363A;
+      position: relative;
+      span{
+        //margin: 0 14px;
+      }
+      span.title{
+        list-style: none;
+        margin: 8px 0;
+        padding: 8px 0;
+        display: inline-block;
+        height: 100%;
+        padding-right: 12px;
+        //border-right: 1px solid rgba(217,217,217,1);
+        border-bottom: none;
+      }
+      .ant-input-search,.icons{
+        position: absolute;
+        top:14px;
+        right:0px;
+      }
+    }
+    .cont{
+      padding: 24px 48px;
+      .flex{
+        display: flex;
+      }
+      .itm{
+        width: 20%;
+        max-width: 500px;
+      }
+      .operate {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        color: #32363A;
+        a {
+          margin-left: 26px;
+          font-size: 14px;
+          color: #0854A1;
+        }
+        button {
+          padding: 0 10px;
+          font-size: 14px;
+          height: 26px;
+          color: #0854A1;
+          border-color: #0854A1;
+        }
+
+      }
+    }
+    .ant-table-wrapper{
+      //padding: 12px 48px 0px;
+    }
+    table{
+      background: #fff;
+    }
+  }
+}
+.abnormal-reason{
+  .filter-panel{
+    padding: 22px 48px 22px;
+  }
+  position: relative;
+  .flex-container,.basic-info{
+    width: 100%;
+  }
+  section {
+    input{
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+    }
+    .item{
+      max-width:256px;
+    }
+  }
+}
+.has-error .ant-form-explain, .has-error .ant-form-split{
+  //background: #FFEBEb;
+  //color:rgba(0, 0, 0, 0.65);
+}
+//异常原因
+.reason{
+  .MuiToolbar-root{
+    padding-left: 0px;
+  }
+  .operate{
+    position: relative;
+    .flex-space-between{
+      position: absolute;
+      right:0px;
+      bottom:-45px;
+      z-index: 999;
+      >span{
+        position: relative;
+        z-index: 9;
+        // width: 54px;
+        margin-left:12px;
+        color:#0854A1;
+        font-size:14px;
+        line-height:26px;
+        cursor: pointer;
+        button{
+          color:#fff;
+          &:hover{
+            background-color: #00af98;
+            border-color: #00af98;
+          }
+        }
+        &.import{
+          span,input{
+            cursor: pointer;
+          }
+          input{
+            width: 54px;
+            opacity: 0;
+            position: absolute;
+            left:0px;
+            top: 0px;
+            z-index: 10;
+          }
+          input[type='file']{
+            cursor: pointer;
+            font-size: 0;
+          }
+          a{
+            margin:0;
+          }
+        }
+      }
+    }
+  }
+}
+.reason-modal{
+  .ant-modal{
+    .ant-modal-title{
+      i{
+        color:#BB0000;
+        margin-right:8px;
+      }
+    }
+  }
+}
+//过滤数据组件
+.filter-data{
+  .header{
+    padding: 0 16px 12px 16px;
+    border-bottom:1px solid rgba(217,217,217,1);
+    >span{
+      font-size:16px;
+    }
+    .tab{
+      border: 1px solid #00af98;
+      border-radius: 4px;
+      i{
+        padding: 4px 8px;
+        font-size: 18px;
+      }
+      .active{
+        color:#fff;
+        background: #00af98;
+      }
+    }
+  }
+  .contents{
+    .item{
+      height:38px;
+      padding:6px 16px;
+      box-shadow: inset 0 -1px 0 0 #EDEDED;
+    }
+    .ant-checkbox-wrapper{
+      margin-right: 12px;
+    }
+  }
+}
+//设备参数分析-监控
+.real-time-monitoring{
+  .header{
+    // height:121px;
+    padding: 0px 48px 0 48px;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(25, 25, 25, 0.15), 0 1px 4px 0 rgba(25, 25, 25, 0.1);
+    .lef{
+      display: flex;
+      justify-content: flex-start;
+      .tabs{
+        .item{
+          width:96px;
+          height:100%;
+          font-size:12px;
+          margin-left: 20px;
+          padding: 28px;
+          text-align: center;
+          &.active{
+            border-bottom: 2px solid #00af98;
+            p{
+              background: #00af98;
+              i{
+                color: #fff;
+              }
+            }
+          }
+          p{
+            width: 40px;
+            height:40px;
+            border-radius: 20px;
+            border:1px solid #00af98;
+            position: relative;
+            i{
+              position: absolute;
+              top:3px;
+              left:10px;
+              font-size: 20px;
+              color: #00af98;
+            }
+            span.badge{
+              position: absolute;
+              top: -5px;
+              right: -5px
+            }
+          }
+        }
+      }
+    }
+    .rig{
+      font-family: PingFangSC-Regular;
+      color:#666;
+    }
+  }
+  .contents{
+    padding: 30px 2% 0;
+    div.l{
+      padding-right: 20px;
+      margin-bottom: 16px;
+      font-family: PingFangSC-Regular;
+      font-size: 16px;
+      color: #666666;
+      line-height: 24px;
+      span{
+        font-size:22px;
+        margin-right:12px;
+        &:last-child{
+          font-size:16px;
+          color:#6F7275;
+        }
+      }
+    }
+    .item{
+      width: 22.3%;
+      //border:1px solid #d9d9d9;
+      margin-left:1.5%;
+      margin-right:1.5%;
+      background: #FFFFFF;
+      border-radius: 6px;
+      &:first-child{
+        margin-left:0;
+      }
+      &:last-child{
+        margin-right:0;
+      }
+      .head{
+        background: #F5FAFC;
+        //box-shadow: 0 2px 7px 0 #EBEDEE;
+        border-radius: 6px 6px 0px 0px;
+        .card-header{
+          padding:16px 16px 0 16px;
+          font-family: PingFangSC-Medium;
+          font-size: 24px;
+          color: #666666;
+          line-height: 24px;
+          .avator{
+            width:40px;
+            height:40px;
+            margin-right:12px;
+            background: #0F828F;
+            border-radius: 4px;
+          }
+          p{
+            margin:0;
+            line-height:24px;
+          }
+        }
+        .list-header{
+          height:46px;
+          line-height:46px;
+          padding:0 22px 0 18px;
+          font-family: PingFangSC-Light;
+          font-size: 14px;
+          color: #666666;
+        }
+      }
+      .content{
+        ul{
+          margin:0;
+          overflow-y: auto;
+          li{
+            height:46px;
+            line-height: 46px;
+            padding: 0 18px;
+            font-family: PingFangSC-Regular;
+            font-size: 15px;
+            color: #999999;
+            cursor: pointer;
+            &:last-child{
+              box-shadow: none;
+            }
+            &:hover,&:focus{
+              background-color: #F0FCFB;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//抽屉
+.drawer{
+  .ant-drawer-wrapper-body{
+    background: rgba(255,255,255,0.65);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 8px 0 rgba(0,0,0,0.30);
+    .ant-drawer-body{
+      .ant-tabs-tab{
+        width: 100px;
+        text-align: center;
+      }
+    }
+  }
+}
+//通知
+.equipment-monitoring{
+  .create-device-page{
+    .head-params{
+      >div{
+        margin-right: 56px;
+        span{
+          margin-right: 8px;
+        }
+      }
+      p{
+        font-size: 24px;
+        margin-top: 10px;
+        &.statu{
+          color: #32363A;
+        }
+        &.abnormal{
+          color: #107E3E;
+        }
+        &.value{
+          color: #515559;
+        }
+      }
+    }
+  }
+}
+.device-modal{
+  .ant-modal-body{
+    padding: 24px;
+  }
+  .ant-modal-footer{
+    button:hover{
+      background-color: @commonColor;
+      border-color: @commonColor;
+      color:#fff;
+    }
+  }
+}
+.create-param{
+  .default-form{
+    input{
+      border:none;
+    }
+  }
+}
+#root .ant-form a{
+  color: #00af98;
+}
+#time_related_controls_username:focus{
+  border-color: #00af98;
+}
+#time_related_controls_password:focus{
+  border-color: #00af98;
+}
+#time_related_controls_remember:focus{
+  border-color: #00af98;
+}
+.token-modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  height: 100%;
+  background-color: rgba(0,0,0,0.20);
+  p{
+    width: 300px;
+    height:100px;
+    padding: 16px 20px;
+    top: 50%;
+    left:50%;
+    margin: -50px 0 0 -150px;
+    position: fixed;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    pointer-events: auto;
+    button{
+      position: absolute;
+      bottom: 12px;
+      right:20px;
+      background-color: @commonColor;
+      border:none;
+      outline: none;
+      color:#fff;
+      cursor: pointer;
+      line-height: 21px;
+    }
+  }
+}
+#token-modal999{
+  z-index: 999;
+}
+input[placeholder="管理设备"]{
+  width: 300px;
+}
+.angular-pagination{
+  float:right;
+  margin: 16px 0;
+}
+.ant-select-focued .ant-select-selection, .ant-select-open .ant-select-selection, 
+.ant-select-selection:hover, .ant-select-selection:focus{
+  border-color: @commonColor;
+}
+.ant-checkbox-checked .ant-checkbox-inner{
+  background-color: @commonColor;
+  border-color: @commonColor;
+}
+.cause-list .ant-select-selection--multiple .ant-select-selection__rendered > ul > li[title='其他']{
+  div,span{
+    color:@commonColor
+  }
+}
+.filter-panel .ant-calendar-picker:hover  .ant-input, .filter-panel .ant-input:hover{
+  border-color:@commonColor
+}
+.add-import .edit-table-content{
+  .MuiToolbar-regular .MuiIconButton-root{
+    margin-right: 142px;
+  }
+}
+.App-contentMain input{
+  outline: none;
+}
+.ant-menu-vertical.ant-menu-sub .ant-menu-item{
+  border-left-color:@commonColor; 
+}
+.MuiSvgIcon-root{
+  color:@commonColor;
+}
+.MuiPaper-root .MuiTableCell-root{
+  word-break: keep-all;
+}
+#components-form-demo-normal-login .has-error .ant-input-affix-wrapper .ant-input{
+  border:none;
+}
+@media screen and (min-width: 1920px){
+  .real-time-monitoring .contents .item{
+    height:600px;
+    .content ul{
+      height:514px
+    }
+  }
+}
+@media screen and (min-width: 1678px) and (max-width: 1919px) {
+  .real-time-monitoring .contents .item{
+    height:530px;
+    .content ul{
+      height:444px
+    }
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1677px) {
+  .real-time-monitoring .contents .item{
+    height:450px;
+    .content ul{
+      height:364px
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1199px) {
+  .real-time-monitoring .contents .item{
+    height:450px;
+    .content ul{
+      height:364px
+    }
+  }
+}

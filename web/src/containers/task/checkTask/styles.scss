@@ -1,0 +1,23 @@
+.base {
+  :global {
+    .ant-radio-group {
+      width: 300px;
+      display: inline-flex;
+      justify-content: space-between;
+    }
+  }
+}
+.taskLog {
+  :global {
+    .ant-form-item-label {
+      width: 68px;
+    }
+  }
+}
+.reportContainer {
+  border: 1px solid $border;
+  padding: 20px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}

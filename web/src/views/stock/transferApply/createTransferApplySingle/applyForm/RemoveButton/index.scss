@@ -1,0 +1,11 @@
+.removeButton {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-bottom: 16px;
+
+  .removeIcon {
+    cursor: pointer;
+    color: red;
+  }
+}

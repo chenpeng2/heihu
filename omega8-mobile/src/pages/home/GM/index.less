@@ -1,0 +1,205 @@
+.gm-page {
+    .part-name {
+        margin-left: 16px;
+        font-size: 18px;
+        line-height: 1em;
+    }
+    .top {
+        width: 100%;
+    }
+    .title {
+        line-height: 19px;
+        span {
+            font-weight: 500
+        }
+    }
+    .info {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        .data {
+            font-size: 36px;
+            color: #0A6ED1;
+            font-weight: 300;
+        }
+        .metas {
+            display: flex;
+        }
+        .meta {
+            margin-left: 13px;
+            font-size: 14px;
+            text-align: right;
+            .label {
+                display: inline-block;
+                margin-bottom: 4px;
+                font-size: 12px;
+                color: #666666;
+            }
+            .strong {
+                margin-top: 4px;
+                color: #0A6ED1;
+            }
+        }
+    }
+    .progressbar-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .progress-label {
+            margin-left: 26px;
+            font-size: 18px;
+            color: #32363B;
+        }
+    }
+    .cnt-box {
+        display: flex;
+        font-size: 16px;
+        justify-content: space-between;
+        .strong {
+            font-size: 18px;
+            color: #0A6ED1;
+        }
+    }
+    .item-media {
+        i {
+            font-size: 16px;
+            text-align: center;
+            line-height: 32px;
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            background: #0F828F;
+            border-radius: 4px;
+        }
+    }
+    .item-after {
+        font-size: 18px;
+        color: #0854A0;
+    }
+    .flow-box {
+        position: relative;
+        min-height: 520px;
+        .legend-box {
+            position: absolute;
+            width: 100%;
+            bottom: 40px;
+            left: 16px;
+        }
+        .ring {
+            height: 64px;
+            width: 64px;
+            border-radius: 50%;
+            border: 1px solid #dcdcdc;
+            margin-bottom: 8px;
+            .sap-icon {
+                position: absolute;
+                z-index: 999;
+                top: 0px;
+                left: 0px;
+                line-height: 66px;
+                font-size: 24px;
+                color: #6A6D70;
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+            }
+        }
+        .icon-process {
+            color: #107F3E;
+        }
+        .dept {
+            position: absolute;
+            text-align: center;
+            .icon-process {
+                position: absolute;
+                padding: 8px;
+                background: #fff
+            }
+        }
+        .receiving {
+            top: 16px;
+            left: 16px;
+            .icon-process {
+                top: 14px;
+                left: calc( 50vw - 33px )
+            }
+            .line {
+                position: absolute;
+                left: calc(66px + 8px);
+                top: 33px;
+                width: calc( 100vw - 16px * 4 - 66px - 33px - 8px );
+                height: 1px;
+                background: #dcdcdc;
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 105px;
+                    background: #dcdcdc;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+        .picking {
+            top: 160px;
+            right: 16px;
+            .icon-process {
+                top: 125px;
+                left: 18px;
+                transform: rotate(90deg)
+            }
+            .line {
+                position: absolute;
+                left: 33px;
+                top: calc( 93px + 8px );
+                width: 1px;
+                height: 90px;
+                background: #dcdcdc;
+            }
+        }
+        .shipping {
+            bottom: 70px;
+            right: 16px;
+            .icon-process {
+                top: 14px;
+                left: calc(-50vw + 66px);
+            }
+            .line {
+                position: absolute;
+                right: calc(66px + 8px);
+                top: 33px;
+                width: calc( 100vw - 16px * 4 - 66px - 33px - 8px );
+                height: 1px;
+                background: #dcdcdc;
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 125px;
+                    background: #dcdcdc;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+        }
+        .stable {
+            top: 160px;
+            left: 16px;
+            .icon-process {
+                top: 14px;
+                left: calc(50vw - 33px);
+            }
+            .line {
+                position: absolute;
+                left: calc(66px + 8px);
+                top: 33px;
+                width: calc( 100vw - 16px * 4 - 66px * 2 - 8px * 2 );
+                height: 1px;
+                background: #dcdcdc;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.storageList {
+  margin-top: 20px;
+  :global {
+    .ant-table-row-level-1 {
+      background-color: $white !important;
+    }
+    .ant-table-row-level-2 {
+      background-color: #fafafa !important;
+    }
+  }
+}

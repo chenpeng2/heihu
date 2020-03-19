@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.fab230fa.chunk.css",
+    "main.js": "./static/js/main.72238e7b.chunk.js",
+    "main.js.map": "./static/js/main.72238e7b.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.31c6d7f4.js",
+    "runtime~main.js.map": "./static/js/runtime~main.31c6d7f4.js.map",
+    "static/css/2.c1af1b16.chunk.css": "./static/css/2.c1af1b16.chunk.css",
+    "static/js/2.794eee0e.chunk.js": "./static/js/2.794eee0e.chunk.js",
+    "static/js/2.794eee0e.chunk.js.map": "./static/js/2.794eee0e.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.6a014966115426d4f3357a9ab72f1fa9.js": "./precache-manifest.6a014966115426d4f3357a9ab72f1fa9.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.c1af1b16.chunk.css.map": "./static/css/2.c1af1b16.chunk.css.map",
+    "static/css/main.fab230fa.chunk.css.map": "./static/css/main.fab230fa.chunk.css.map",
+    "static/media/404.png": "./static/media/404.bb0fc435.png",
+    "static/media/500.png": "./static/media/500.b33bae92.png",
+    "static/media/AppleTV.svg": "./static/media/AppleTV.25e10b4a.svg",
+    "static/media/app.less": "./static/media/icomoon.6831b2a1.ttf",
+    "static/media/logo2.png": "./static/media/logo2.6373a401.png",
+    "static/media/restTime.svg": "./static/media/restTime.da1d29ea.svg"
+  }
+}

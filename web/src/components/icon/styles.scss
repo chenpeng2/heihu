@@ -1,0 +1,51 @@
+:global {
+  $fontFamily: 'anticon';
+  .anticon {
+    font-family: 'anticon' !important;
+    font-size: 14px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .iconfont {
+    font-family: 'iconfont' !important;
+    font-size: 16px;
+    font-style: normal;
+    background-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .IconCircledText {
+    border-radius: 50%;
+    border: solid lightgrey 0.05rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .IconText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // 这个类型的icon默认需要是红色
+  .anticon-minus-circle {
+    color: $error;
+  }
+}
+
+.avatar {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  margin-right: 10px;
+}

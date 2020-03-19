@@ -1,0 +1,19 @@
+@mixin addCard {
+  display: inline-block;
+  padding: 20px;
+  background: white;
+  border: 1px solid $border;
+  border-radius: 5px;
+  width: 220px;
+  height: 140px;
+}
+
+.addCard {
+  @include addCard;
+}
+
+.commonCard {
+  @include addCard;
+  flex: 1;
+  flex-basis: 200px;
+}

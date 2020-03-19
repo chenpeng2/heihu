@@ -1,0 +1,398 @@
+@import '~antd/dist/antd.css';
+@import './font.less';
+
+@commonColor: #00AB95;
+
+//antd样式在这里
+//ant-popover
+.ant-popover{
+  .ant-popover-message-title{
+    padding-left: 0px;
+  }
+  .ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow{
+    transform: translateX(-50%) rotate(45deg) scale(1.6);
+  }
+}
+body, html, #root, .App {
+  min-height: 100%;
+  font-size: 14px;
+}
+
+.ant-upload-picture-card-wrapper {
+  width: auto;
+}
+.ant-upload-list-picture-card .ant-upload-list-item {
+  border: none;
+  padding: 0px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.ant-upload.ant-upload-select-picture-card {
+  margin: 0px 20px 0 0;
+  border: 1px solid #dcdcdc;
+  .ant-upload {
+    font-size: 30px;
+  }
+}
+/* 字体icon */
+@font-face {
+  font-family: 'sapicon';
+  src: url('../fonts/SAP-icons.ttf') format('truetype');
+}
+.sap-icon{
+  font-family: "sapicon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-slim-arrow-right:before {
+  content: "\e1ed";
+}
+.icon-account:before {
+  content: "\e001";
+}
+.icon-bell:before {
+  content: "\e23a";
+}
+.icon-filter-fields:before {
+  content: "\e265";
+}
+.icon-action-settings:before {
+  content: "\e0a6";
+}
+
+.setting-modal {
+  .ant-modal-body {
+    padding: 0px;
+  }
+  .ant-modal-header {
+    text-align: center;
+  }
+  .ant-modal-title {
+    font-weight: normal;
+    color: #41464C;
+  }
+  .ant-tabs-left-bar .ant-tabs-tab {
+    padding: 6px 16px 6px 16px;
+    box-sizing: border-box;
+    min-height: 54px;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    min-width: 180px;
+    &:hover {
+      color: rgba(0, 0, 0, 0.65);
+      background: #FAFAFA;
+    }
+  }
+  .ant-tabs-left-bar .ant-tabs-tab-active {
+    background: #D8E9F8;
+    color: rgba(0, 0, 0, 0.65);
+    &:hover {
+      background: #D8E9F8;
+    }
+  }
+  .tab-inner {
+    display: flex;
+    align-items: center;
+    .sap-icon {
+      margin-right: 12px;
+      font-size: 16px;
+    }
+  }
+  .inner {
+    padding: 16px 12px;
+    .sap-icon {
+      color: #0087E1;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+  }
+  form {
+    padding-top: 17px;
+    .ant-form-item {
+      margin-bottom: 0px;
+    }
+    p {
+      margin-top: 20px;
+      padding-left: 30px;
+      max-width: 297px;
+      font-size: 12px;
+      color: #89919A;
+    }
+  }
+  .group {
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+    label {
+      text-align: right;
+      min-width: 100px;
+    }
+  }
+  input {
+    width: 197px;
+    height: 26px;
+  }
+}
+
+.setting-popup {
+  background-color: #ffffff;
+  color: #6a6d70;
+  .popup-content {
+    padding: 14px 18px;
+    .top {
+      display: flex;
+      padding-bottom: 20px;
+      align-items: center;
+    }
+    .avatar-info {
+      font-size: 16px;
+      color: #515559;
+      margin-left: 20px;
+      position: relative;
+      width: 100%;
+      .logout-button {
+        background-color: #ffffff;
+        border: solid 1px @commonColor;
+        color: @commonColor;
+        margin-top: 10px;
+        height: 28px;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+    .avatar {
+      width: 74px;
+      height: 100%;
+      border-radius: 50%;
+      margin-top: 6px;
+    }
+
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    .setting {
+      cursor: pointer;
+    }
+    .sap-icon {
+      vertical-align: middle;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    span{
+      vertical-align: middle;
+    }
+    .icon-btn {
+      display: flex;
+      align-items: center;
+      color: #515559;
+      justify-content: center;
+      i {
+        display: block;
+        margin: 0 10px;
+      }
+    }
+    .user-info {
+      align-items: center;
+      display: flex;
+      &:first-child {
+        width: 65%;
+      }
+    }
+  }
+}
+
+.App{
+  header {
+    .top{
+      z-index: 3;
+      // position: fixed;
+      // top: 0;
+      background-color: #fff;
+      height: 55px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 28px;
+      box-shadow: 0 0 2px 0 rgba(0,0,0,0.15);
+      .top-title {
+        text-align: center;
+        flex: 2;
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+        color: rgba(52,81,94,0.40);
+        text-align: center;
+        line-height: 24px;
+      }
+    }
+    .all-menus{
+      margin-top: 1px;
+    }
+    .profile-content {
+      flex-basis:72px;
+      .icon-bell {
+        margin-right: 20px;
+        vertical-align: middle;
+        position: relative;
+        font-size: 18px;
+        cursor: pointer;
+        span {
+          position: absolute;
+          top: -6px;
+          right: -6px;
+          background: #EE0000;
+          border-radius: 50%;
+          font-size: 9px;
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          text-align: center;
+          line-height: 12px;
+        }
+      }
+      .avatar {
+        cursor: pointer;
+        // width: 24px;
+        // height: 24px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .header-navbar {
+    width: 100%;
+    padding: 0 36px;
+    text-align: center;
+    .ant-menu-item {
+      width: 120px;
+      padding: 4px 5px 0 5px;
+      //margin: 0 10px;
+      a{
+        padding: 0 10px;
+      }
+      div.bottom{
+        width: 100%;
+        height:3px;
+        background: #fff;
+        border-radius: 2px 2px 0 0;
+        border-radius: 2px 2px 0px 0px;
+      }
+    }
+    .ant-menu-item:not(:last-child) {
+      border-bottom-color: transparent;
+    }
+    .ant-menu-item:hover, .ant-menu-submenu:hover, .ant-menu-item-active, .ant-menu-submenu-active {
+      border-bottom-color: transparent;
+    }
+    .ant-menu-item-selected, .ant-menu-submenu-selected,
+    .ant-menu-submenu-selected {
+      color: rgba(52, 81, 94, 1)!important;
+      //border-bottom-color: @commonColor!important;
+      a{
+        padding: 0 10px;
+      }
+      span{
+        color:@commonColor;
+      }
+      div.bottom{
+        background: @commonColor;
+      }
+    }
+  }
+}
+.ant-menu-vertical .ant-menu-item{
+  margin-bottom: 0px!important;
+  margin-top: 0px;
+}
+.ant-menu-submenu-popup {
+  border: 1px solid #D9D9D9;
+}
+.ant-menu-item:not(:last-child) {
+  border-bottom: 2px solid #d9d9d9;
+}
+.ant-menu {
+  box-shadow: none;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: #fff;
+  border-left: 2px solid #0854A0;
+}
+.required-mark {
+  color: #BB0000;
+  margin: 0 2px;
+}
+.ant-pagination-item:focus a, .ant-pagination-item:hover a {
+  color: @commonColor
+}
+.ant-pagination-item-active {
+  border-color: @commonColor;
+  a {
+    color: @commonColor
+  }
+}
+.ant-breadcrumb a,
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: @commonColor;
+  &:hover {
+    color: @commonColor;
+  }
+}
+.ant-tabs-ink-bar {
+  background-color: @commonColor;
+}
+.ant-select-dropdown-menu-item {
+  color: #666;
+}
+.ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled),
+.ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color: #F0FCFB;
+  color: #000
+}
+//新版本
+.ant-menu-submenu-popup{
+  margin-left: 20px;
+  .ant-menu-sub{
+    min-width: 120px;
+  }
+  .ant-menu-item:not(:last-child){
+    border-bottom: none;
+  }
+  .ant-menu-item-selected > a{
+    color:@commonColor;
+  }
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+    border-left: none;
+  }
+  .ant-menu-item:hover{
+    a{
+      color:rgba(0, 0, 0, 0.65);
+      color:@commonColor;
+    }
+    background: rgba(240,251,252,1);
+  }
+
+}
+.all-menus{
+  .ant-menu{
+    .ant-menu-submenu-open{
+      color:@commonColor;
+    }
+  }
+  .ant-menu-horizontal > .ant-menu-item > a:hover{
+    color:@commonColor;
+  }
+  .ant-menu-submenu-title{
+    &:hover,&:focus,&:link,&:visited,&:active{
+      color:@commonColor;
+    }
+  }
+}

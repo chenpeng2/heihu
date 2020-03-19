@@ -1,0 +1,72 @@
+.filterItem {
+  :global {
+    .ant-select-selection--multiple {
+      max-height: 100px;
+      overflow: auto;
+    }
+  }
+}
+
+.itemForFormItem {
+  :global {
+    .ant-form-item-control {
+      line-height: normal;
+    }
+    .ant-form-item-control-wrapper {
+      width: 100%; // 需要在改变宽度的时候自适应
+      min-width: 100%;
+      max-width: 100%;
+      padding-right: 84px; // 为了ItemForFormItem和Item公用
+    }
+
+    .ant-form-item {
+      // 为了处理itemForFormItem下的间距问题
+      margin-bottom: 0px;
+      display: flex;
+
+      .ant-form-item-label {
+        width: 84px; // 为了ItemForFormItem和Item公用
+        flex-shrink: 0; // 为了ItemForFormItem和Item公用
+        height: 28px;
+        display: flex;
+        margin-right: 10px; // 为了ItemForFormItem和Item公用
+        justify-content: flex-end;
+        align-items: center;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+.itemListCloseState {
+  animation: itemListCloseAnimation 0.5s;
+  overflow: hidden;
+  height: 0px;
+}
+
+// 利用animation而不使用transition是因为transition需要定义最终的高度。而animation不需要。
+// animation定义的知识动画的过程。最终的状态还是由最终的样式决定
+@keyframes itemListCloseAnimation {
+  from {
+    height: 220px;
+  }
+
+  to {
+    height: 0px;
+  }
+}
+
+.itemListOpenState {
+  animation: itemListOpenAnimation 0.5s;
+  overflow: hidden;
+}
+
+@keyframes itemListOpenAnimation {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 220px;
+  }
+}

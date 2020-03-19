@@ -1,0 +1,33 @@
+.removeIcon {
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  cursor: pointer;
+  color: #f4335b;
+}
+
+.index {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  text-align: center;
+  line-height: 19px;
+  width: 19px;
+  height: 19px;
+  color: #fff;
+}
+
+.qcCheckPointContainerOnDel {
+  animation: lighting 1s infinite;
+}
+
+@keyframes lighting {
+  0% {
+    border: 1px solid #fff;
+  }
+  50% {
+    border: 1px solid #f4335b;
+  }
+  100% {
+    border: 1px solid #fff;
+  }
+}

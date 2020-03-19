@@ -1,0 +1,54 @@
+.wrapper {
+  margin: 20px;
+}
+
+.linkBorder {
+  border: 1px solid;
+  padding: 2px 5px 0 5px;
+}
+
+.item {
+  margin-top: 20px;
+}
+.checkHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.type {
+  border: 1px solid;
+  padding: 0 3px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+
+.qcItem {
+  width: 50%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 14px;
+  .label {
+    opacity: 0.6;
+  }
+}
+.content {
+  border: 1px solid $border;
+  background: $grey;
+  padding: 0px 40px 20px 40px;
+  margin-top: 20px;
+}
+
+.addItem {
+  height: 32px;
+  border: 1px solid;
+  padding: 6px 13px;
+}

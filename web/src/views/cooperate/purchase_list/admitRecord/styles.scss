@@ -1,0 +1,141 @@
+.purchaseAdmit {
+  :global {
+    .ant-form-item {
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    .ant-form-item-control {
+      line-height: unset;
+    }
+
+    .rs-picker-disabled {
+      background-color: #f5f5f5;
+      border-color: rgb(211, 216, 227);
+      opacity: 1;
+
+      .rs-picker-toggle-value {
+        color: rgba(0, 0, 0, 0.25) !important;
+      }
+    }
+
+    .rs-picker-default .rs-picker-toggle {
+      padding: 3px 11px;
+      transition: 0.3s;
+    }
+
+    .rs-picker-toggle-caret {
+      top: 3px;
+    }
+
+    .rs-picker-toggle-clean {
+      top: 3px;
+    }
+
+    .rs-picker-toggle-caret {
+      color: #B8BFCF;
+    }
+
+    .rs-picker-toggle-caret::before {
+      content: '\E61D' !important;
+      font-family: 'anticon' !important;
+    }
+
+    .rs-picker-toggle .rs-picker-toggle-placeholder {
+      color: #B8BFCF;
+    }
+
+    .rs-picker-menu .rs-picker-search-bar::after {
+      top: 15px;
+    }
+
+    .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle:hover,
+    .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle.active {
+      border-color: $primary;
+      transition: 0.3s;
+    }
+
+    .rs-picker-check-menu-item:not(.rs-picker-check-menu-item-disabled):hover,
+    .rs-picker-check-menu-item.rs-picker-check-menu-item-focus {
+      background-color: #e1faee;
+      color: $primary;
+    }
+
+    .rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-focus {
+      background-color: #e1faee;
+      color: $primary;
+    }
+
+    .rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-active {
+      background-color: #e1faee;
+      color: $primary;
+    }
+
+    .rs-picker-cascader-menu-item:not(.rs-picker-cascader-menu-item-disabled):hover,
+    .rs-picker-cascader-menu-item:not(.rs-picker-cascader-menu-item-disabled):focus {
+      background-color: #e1faee;
+      color: $primary;
+    }
+
+    .rs-picker-cascader-menu-item.rs-picker-cascader-menu-item-focus:hover:focus {
+      background-color: #e1faee;
+      color: $primary;
+    }
+
+    .rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+      height: 20px;
+      color: $black;
+    }
+
+    .rs-picker-check-menu-item-active .rs-picker-check-menu-item-wrapper .rs-picker-check-menu-item-inner::before,
+    .rs-picker-check-menu-item-indeterminate .rs-picker-check-menu-item-wrapper .rs-picker-check-menu-item-inner::before {
+      border-color: $primary;
+      background-color: $primary;
+    }
+
+    .rs-picker-menu .rs-picker-search-bar .rs-picker-search-bar-input:hover {
+      border-color: $primary;
+    }
+
+    .rs-picker-menu .rs-picker-search-bar .rs-picker-search-bar-input:focus {
+      border-color: $primary;
+    }
+  }
+}
+
+.required::before {
+  display: inline-block;
+  margin-right: 4px;
+  content: "*";
+  font-family: SimSun;
+  line-height: 1;
+  font-size: 12px;
+  color: #f5222d;
+}
+
+.purchaseAdmitRecord {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+
+    .ant-form-item-control {
+      line-height: unset;
+    }
+
+    .ant-tooltip-inner {
+      padding: 0;
+    }
+  }
+}
+
+.checkOption {
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.checkOption:hover {
+  background-color: #F1FCFA;
+  color: $primary;
+}

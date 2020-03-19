@@ -1,0 +1,56 @@
+:global {
+  .rc-drawer-sidebar {
+    width: 354px ;
+    min-width: auto !important;
+    margin-top: 51px;
+  }
+  .rc-drawer {
+    position: static;
+
+    &-sidebar {
+      position: fixed;
+      background-color: white;
+      min-width: 500px;
+    }
+
+    &-draghandle {
+      width: 0;
+    }
+
+    &-content {
+      width: 0;
+    }
+
+    &-overlay {
+      display: none;
+    }
+  }
+  .timeline {
+    .item {
+      display: flex;
+      .line-container {
+        transform: translateY(4.5px);
+        margin-right: 10px;
+        width: 8px;
+        display: flex;
+        flex-direction: column;
+        .dot {
+          width: 8px;
+          height: 8px;
+          border: 1px solid;
+          border-radius: 4px;
+        }
+        .line {
+          border-left: 1px solid;
+          flex: 1;
+          width: 0;
+          transform: translateX(3.5px);
+        }
+      }
+    }
+  }
+}
+
+.sidebarDrag {
+  width: 20px;
+}

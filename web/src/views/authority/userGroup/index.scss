@@ -1,0 +1,32 @@
+.list {
+  margin-bottom: 20px;
+  .filter {
+    display: flex;
+    margin-bottom: 1px solid $border;
+    .search {
+      padding: 20px;
+    }
+  }
+  .addGroup {
+    margin: 0 0 20px 20px;
+  }
+}
+
+.childrenSplit > * {
+  margin-right: 20px;
+}
+.user {
+  background: transparent;
+  border: none;
+}
+.user:hover {
+  opacity: 0;
+}
+.userTag {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.userTag-dash {
+  border-style: dashed;
+}

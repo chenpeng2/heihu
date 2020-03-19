@@ -1,0 +1,12 @@
+.gc-radio-group {
+  :global {
+    .ant-radio-button-wrapper {
+      background-color: $grey;
+      color: rgba(0, 0, 0, 0.4);
+    }
+    .ant-radio-button-wrapper-checked {
+      color: $primary;
+      background-color: white;
+    }
+  }
+}

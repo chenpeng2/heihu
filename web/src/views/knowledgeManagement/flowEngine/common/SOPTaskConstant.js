@@ -1,0 +1,21 @@
+module.exports = {
+  SOPTaskStatus: new Map([[1, '未开始'], [2, '执行中'], [3, '暂停中'], [4, '已结束'], [5, '已取消']]),
+  SOP_TASK_STATUS_UNSTART: 1,
+  SOP_TASK_STATUS_EXECUTING: 2,
+  SOP_TASK_STATUS_PAUSE: 3,
+  SOP_TASK_STATUS_FINISH: 4,
+  SOP_TASK_STATUS_CANCEL: 5,
+  SOPTaskAction: new Map([
+    [1, '创建任务'],
+    [2, '编辑任务'],
+    [3, '取消任务'],
+    [4, '开始任务'],
+    [5, '暂停任务'],
+    [6, '结束任务'],
+    [7, '结束步骤'],
+    [8, '强制结束步骤'],
+    [9, '更新任务'],
+    [10, '结束步骤'],
+    [11, '继续任务'],
+  ]),
+};

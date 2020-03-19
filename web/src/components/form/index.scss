@@ -1,0 +1,38 @@
+:global {
+  .small-footer-button {
+    margin-top: 10px;
+    .ant-btn {
+      width: auto !important;
+      height: 26px !important;
+    }
+  }
+}
+
+.footer {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+:global(.ant-modal-body){
+  .footer{
+    margin-bottom: 30px;
+  }
+}
+
+.footerButton {
+  margin: 0 20px;
+  width: 114px;
+  height: 32px;
+}
+
+.pageFooter {
+  margin-left: 120px;
+  .cancel {
+    width: 114px;
+    margin-right: 60px;
+  }
+  .save {
+    width: 114px;
+  }
+}

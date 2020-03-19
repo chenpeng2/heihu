@@ -1,0 +1,59 @@
+.operationLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.editMachiningMaterial {
+  :global {
+    .ant-form-horizontal {
+      margin-left: 40px;
+    }
+  }
+}
+.machiningMaterialForm {
+  :global {
+    .ant-select-selection__rendered {
+      line-height: 32px;
+    }
+    .ant-select-selection--single {
+      height: 32px;
+    }
+    .modal-body-form {
+      margin: unset !important;
+      border: unset !important;
+      background: unset !important;
+    }
+  }
+}
+.searchHeader {
+  margin: 20px;
+  color: $fontSub;
+  & > * {
+    margin-right: 10px;
+  }
+}
+.detailLogHeader {
+  margin: 20px;
+  font-size: 16px;
+}
+.footer {
+  margin-top: 16px;
+  .cancel {
+    width: 114px;
+    margin-right: 60px;
+  }
+  .ok {
+    width: 114px;
+  }
+}
+.header {
+  font-size: 16px;
+  padding: 20px 0 30px 20px;
+  margin: 0;
+}
+.baseHeaders {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #000000;
+}

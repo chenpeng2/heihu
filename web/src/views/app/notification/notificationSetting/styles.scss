@@ -1,0 +1,54 @@
+.moduleRow {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid #F1F2F5;
+  font-size: 14px;
+}
+
+.bulkSetting {
+  position: absolute;
+  right: 20px;
+  color: #9B9B9B;
+  display: flex;
+  align-items: center;
+  :global {
+    .ant-radio-group {
+      margin-left: 20px; 
+      width: 158px;
+      display: flex;
+      justify-content: space-between;
+      label {
+        margin: 0;
+      }
+      span {
+        font-size: 14px;
+        color: #5A5A5A;
+      }
+    }
+  }
+}
+
+.unreceivedModule {
+  background-color: #FAFAFA;
+  z-index: 1;
+  >* {
+    opacity: 0.7;
+  }
+}
+
+.moduleName {
+  font-size: 22px;
+  color: #00140E;
+  margin-right: 10px;
+}
+
+.moduleReceiveTip {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.moduleSetting {
+  position: absolute;
+  right: 20px;
+}

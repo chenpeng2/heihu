@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tag above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script type="text/javascript">
+      const host = location.hostname;
+      // 神策jsSDK注册
+      const hostname = location.hostname;
+      const isProdEnv = hostname === 'web2.blacklake.cn' || hostname === 'aliyunweb2.blacklake.cn';
+      const isTestEnv = hostname === 'web2-test.blacklake.cn';
+      if (isProdEnv || isTestEnv) {
+        (function(para) {
+          var p = para.sdk_url,
+            n = para.name,
+            w = window,
+            d = document,
+            s = 'script',
+            x = null,
+            y = null;
+          if (typeof w['sensorsDataAnalytic201505'] !== 'undefined') {
+            return false;
+          }
+          w['sensorsDataAnalytic201505'] = n;
+          w[n] =
+            w[n] ||
+            function(a) {
+              return function() {
+                (w[n]._q = w[n]._q || []).push([a, arguments]);
+              };
+            };
+          var ifs = [
+            'track',
+            'quick',
+            'register',
+            'registerPage',
+            'registerOnce',
+            'trackSignup',
+            'trackAbtest',
+            'setProfile',
+            'setOnceProfile',
+            'appendProfile',
+            'incrementProfile',
+            'deleteProfile',
+            'unsetProfile',
+            'identify',
+            'login',
+            'logout',
+            'trackLink',
+            'clearAllRegister',
+            'getAppStatus',
+          ];
+          for (var i = 0; i < ifs.length; i++) {
+            w[n][ifs[i]] = w[n].call(null, ifs[i]);
+          }
+          if (!w[n]._t) {
+            (x = d.createElement(s)), (y = d.getElementsByTagName(s)[0]);
+            x.async = 1;
+            x.src = p;
+            x.setAttribute('charset', 'UTF-8');
+            y.parentNode.insertBefore(x, y);
+            w[n].para = para;
+          }
+        })({
+          sdk_url: 'https://static.sensorsdata.cn/sdk/1.13.1/sensorsdata.min.js',
+          heatmap_url: 'https://static.sensorsdata.cn/sdk/1.13.1/heatmap.min.js',
+          name: 'sensors',
+          server_url: 'https://blacklake.datasink.sensorsdata.cn/sa?token=696162c559b518d9&project=production',
+          heatmap: {},
+        });
+        sensors.quick('autoTrack');
+        sensors.logout();
+      } else {
+        sensors = undefined;
+      }
+
+      //custom page code begin here
+
+      (function() {
+        const hostMap = {
+          'blzz.zhulogic.com': '斑斓智造',
+          localhost: '本地',
+          'web2.genormis.com': '智造', // 沃森
+          'web2-test.blacklake.cn': '测试环境',
+          'web2-dev.blacklake.cn': '开发环境',
+        };
+        window.companyName = hostMap[hostname] || '黑湖智造';
+        document.title = window.companyName;
+        // create favicon
+        var link = document.createElement('link');
+        link.rel = 'shortcut icon';
+        link.href = window.companyName === '黑湖智造' ? '%PUBLIC_URL%/favicon.ico' : 'data:image/png;base64,f';
+        document.getElementsByTagName('head')[0].appendChild(link);
+      })();
+      //custom page code end here
+    </script>
+    <style>
+      .childStyle {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+      }
+
+      /* 通过给loader的empty伪元素来实现加载动画 */
+
+      /* .loader:empty {
+      width: 100px;
+      height: 100px !important;
+      margin: 60px auto;
+      border: 1.1em solid rgba(0, 0, 0, 0.2);
+      border-left: 1.1em solid #000000;
+      border-radius: 50%;
+      animation: load8 1.1s infinite linear;
+    }
+
+    @keyframes load8 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    } */
+    </style>
+  </head>
+
+  <body>
+    <div id="root" class="loader">
+      <div class="childStyle">
+        <img width="335" height="130" src="/web-logo.png" />
+      </div>
+      <script>
+        if (window.companyName !== '黑湖智造') {
+          document.querySelector('.childStyle').innerHTML = window.companyName;
+        }
+      </script>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    -->
+  </body>
+</html>

@@ -1,0 +1,90 @@
+.planDetailGanttContainer {
+  font-size: 12px;
+  .header {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .content {
+    margin-left: 20px;
+  }
+  .titleContainer {
+    .title {
+      color: #1f273d;
+      font-size: 14px;
+    }
+    .subtitle {
+      color: #8e98ae;
+    }
+  }
+
+  @mixin render-icon($color) {
+    color: $color;
+    cursor: pointer;
+    border: 1px solid $color;
+    &:hover {
+      background: $color;
+      color: #fff;
+    }
+  }
+  @mixin render-icon-nohover($color) {
+    color: $color;
+    border: 1px solid $color;
+  }
+
+  .contentContainer {
+    margin-top: 20px;
+    color: #8e98ae;
+    .planIcon {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+
+      border-radius: 15px;
+      background: #fff;
+      margin-right: 20px;
+    }
+    .planIconScNoHover {
+      @include render-icon-nohover($blacklakeGreen);
+    }
+    .planIconZhijianNoHover {
+      @include render-icon-nohover($alertYellow);
+    }
+    .planIconGcNoHover {
+      @include render-icon-nohover($blueViolet);
+    }
+    .planIconSc {
+      @include render-icon($blacklakeGreen);
+    }
+    .planIconZhijian {
+      @include render-icon($alertYellow);
+    }
+    .planIconGc {
+      @include render-icon($blueViolet);
+    }
+    .row {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      .title {
+        width: 25%;
+        text-align: right;
+      }
+      .content {
+        width: 70%;
+        color: #000;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.detailLink {
+  margin-left: 20px;
+  color: $blacklakeGreen;
+  cursor: pointer;
+  font-size: 12px;
+}

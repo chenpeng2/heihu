@@ -1,0 +1,45 @@
+.createProcessRouteContainer {
+  :global {
+    .ant-form-item-label {
+      width: 100px !important;
+    }
+  }
+}
+
+.editContainerOnEdit {
+  animation: lighting 1s;
+}
+
+@keyframes lighting {
+  0% {
+    border: 1px solid #fff;
+  }
+  50% {
+    border: 1px solid $primary;
+  }
+  100% {
+    border: 1px solid #fff;
+  }
+}
+
+.buttonOnShinning {
+  animation: buttonLighting 2s infinite;
+}
+
+@keyframes buttonLighting {
+  0% {
+    background: $blacklakeGreen;
+    color: $white;
+    border: 1px solid $blacklakeGreen;
+  }
+  50% {
+    background: #e4f6f0;
+    color: $blacklakeGreen;
+    border: 1px solid $white;
+  }
+  100% {
+    background: $blacklakeGreen;
+    color: $white;
+    border: 1px solid $blacklakeGreen;
+  }
+}

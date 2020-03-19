@@ -1,0 +1,41 @@
+.sendNotice {
+  :global {
+    .modal-body-form {
+      margin: unset;
+      border: unset;
+      background: unset;
+      padding: unset;
+    }
+    .ant-form-item-control-wrapper {
+      width: 200px;
+    }
+    .tableContainer___31DBS {
+      margin: unset;
+    }
+    .ant-form-item-label {
+      margin-right: 0 !important;
+    }
+  }
+  .noticeDetailWrapper {
+    margin: 0 40px;
+  }
+  .userSelectWrapper {
+    margin: 20px 40px 10px 40px;
+  }
+  .noticeDetailContent {
+    border: 1px solid $borderGrey;
+    background-color: $grey;
+    padding: 10px;
+  }
+  .footer {
+    justify-content: center;
+    display: flex;
+    margin: 25px 0 40px 0;
+
+    .footerButton {
+      margin: 0 20px;
+      width: 114px;
+      height: 32px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.listContainer {
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: rgba(232, 232, 232, 0.2);
+  padding: 2px 10px 10px;
+  margin: 10px 0 20px;
+  width: 450px;
+
+  .listItem {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 8px;
+    position: relative;
+
+    .listItemInfo {
+      height: 100%;
+      width: 100%;
+      padding: 0 12px 0 4px;
+      transition: background-color 0.3s;
+    }
+
+    .closeIcon {
+      display: inline-block;
+      transform: scale(0.83333333) rotate(0deg);
+      font-size: 14px;
+      line-height: 28px;
+      transition: all 0.3s;
+      opacity: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 4px;
+      color: rgba(0, 0, 0, 0.45);
+    }
+  }
+}

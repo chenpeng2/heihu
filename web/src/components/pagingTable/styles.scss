@@ -1,0 +1,49 @@
+:global {
+  .ant-table-thead > tr > th {
+    position: relative;
+    > span {
+      div {
+        display: inline-block;
+      }
+    }
+  }
+  .ant-table-scroll table {
+    width: 100%;
+  }
+}
+
+.columnConfigContainer {
+  :global {
+    .ant-popover-inner-content {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+  }
+}
+
+.caret {
+  display: block;
+  height: 10px;
+  cursor: pointer;
+  line-height: 10px;
+  overflow: hidden;
+
+  &:hover {
+    color: $blacklakeGreen;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    color: #9b9b9b;
+  }
+}
+
+.dragableLine {
+  width: 5px;
+  height: 42px;
+  border-right: 1px solid#e8e8e8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: ew-resize;
+}

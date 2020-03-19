@@ -1,0 +1,8 @@
+.projectFilter {
+  :global {
+    .ant-select-selection--multiple {
+      max-height: 51px;
+      overflow-y: scroll;
+    }
+  }
+}

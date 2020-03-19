@@ -1,0 +1,20 @@
+.top {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  .item {
+    margin-left: 30px;
+    display: inline-block;
+  }
+  .syncButton {
+    margin-left: 30px;
+  }
+  .search {
+    float: right;
+  }
+  .searchInput {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 200px;
+  }
+}

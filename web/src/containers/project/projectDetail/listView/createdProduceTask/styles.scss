@@ -1,0 +1,54 @@
+.createdTaskContainer {
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 10px;
+
+  .header {
+    display: flex;
+    padding: 13px 19px;
+    background-color: #fafafa;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .headerActions {
+    display: flex;
+
+    a {
+      padding-left: 10px;
+    }
+  }
+
+  .subItemContainer {
+    padding: 0 20px;
+    margin: 20px 0;
+    color: #9b9b9b;
+  }
+
+  :global {
+    .ant-collapse {
+      .ant-collapse-item {
+        .ant-collapse-content {
+          padding: 0;
+
+          .ant-collapse-content-box {
+            .taskDetailContainer {
+              padding: 0 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.qcTaskCard {
+  padding: 17px 20px;
+  background-color: #fafafa;
+  text-align: right;
+  border: 1px solid #e8e8e8;
+
+  .label {
+    color: #9b9b9b;
+  }
+}

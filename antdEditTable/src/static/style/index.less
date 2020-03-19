@@ -1,0 +1,416 @@
+//chenpeng 2019-9-15
+//公共样式
+.view-mode{
+  padding: 16px 48px;
+  font-size: 19px;
+  color: #0854A1;
+  .ant-dropdown-trigger{
+    cursor: pointer;
+  }
+}
+.clearfix:after {
+    content: " ";
+    display: block;;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.float-lef{
+  float: left;
+}
+.float-rig{
+  float: right;
+}
+.flex-space-between{
+  display: flex;
+  justify-content:space-between;
+}
+.flex-flex-start{
+  display: flex;
+  justify-content:flex-start;
+}
+.ant-btn{
+  height:26px;
+  line-height:26px;
+}
+.ant-btn-primary{
+  background-color: #0A6ED1;
+  border-color: #0A6ED1;
+}
+.ant-btn-primary:hover, .ant-btn-primary:focus{
+  background-color: #0A6ED1;
+  border-color: #0A6ED1;
+}
+.ant-calendar-picker-container{
+  z-index: 1009;
+}
+a[disabled]{
+  color: rgba(0,0,0,0.25);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.ant-spin{
+  .ant-spin-dot-item{
+    background-color:#0A6ED1
+  }
+}
+.back-color{
+  background: #ececec;
+}
+.ant-anchor-ink{
+  display: none;
+}
+.ant-anchor-link{
+  padding:0;
+}
+.ant-anchor-wrapper{
+  background-color: transparent;
+  height: 40px;
+  overflow: hidden;
+}
+.all-tabs{
+  padding: 8px 0 0;
+  color: #6A6D70;
+  background: rgba(247,247,247,1);
+  //box-shadow: inset 0 -1px 0 0 #D9D9D9;
+  .ant-tabs-bar{
+    padding-left: 32px;
+    margin-bottom:0px;
+    background: #FFFFFF;
+    border-bottom:none;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.30), inset 0 -1px 0 0 #D9D9D9;
+  }
+}
+.all-contents{
+  .content-item{
+    .head{
+      padding: 0px 48px 0px;
+      font-size: 18px;
+      color: #32363A;
+      //box-shadow: inset 0 -1px 0 0 #D9D9D9;
+      span{
+        list-style: none;
+        display: inline-block;
+        margin: 8px 0;
+        padding: 8px 0;
+        border-bottom: 1px solid #6A6D70;
+      }
+    }
+    //异常设备参数和详情
+    .head2{
+      box-shadow: inset 0 -1px 0 0 #D9D9D9;
+      margin: 0px 48px 0px;
+      font-size: 18px;
+      color: #32363A;
+      position: relative;
+      span{
+        //margin: 0 14px;
+      }
+      span.title{
+        list-style: none;
+        margin: 8px 0;
+        padding: 8px 0;
+        display: inline-block;
+        height: 100%;
+        padding-right: 12px;
+        //border-right: 1px solid rgba(217,217,217,1);
+        border-bottom: none;
+      }
+      .ant-input-search,.icons{
+        position: absolute;
+        top:14px;
+        right:0px;
+      }
+    }
+    .cont{
+      padding: 24px 48px;
+      .flex{
+        display: flex;
+      }
+      .itm{
+        width: 20%;
+        max-width: 500px;
+      }
+      .operate {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        color: #32363A;
+        a {
+          margin-left: 26px;
+          font-size: 14px;
+          color: #0854A1;
+        }
+        button {
+          padding: 0 10px;
+          font-size: 14px;
+          height: 26px;
+          color: #0854A1;
+          border-color: #0854A1;
+        }
+      }
+    }
+    .ant-table-wrapper{
+      //padding: 12px 48px 0px;
+    }
+    table{
+      background: #fff;
+    }
+  }
+}
+.abnormal-reason{
+  .filter-panel{
+    padding: 22px 48px 22px;
+  }
+  position: relative;
+  .flex-container,.basic-info{
+    width: 100%;
+  }
+  section {
+    input{
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+    }
+    .item{
+      max-width:256px;
+    }
+  }
+}
+.has-error .ant-form-explain, .has-error .ant-form-split{
+  //background: #FFEBEb;
+  //color:rgba(0, 0, 0, 0.65);
+}
+//异常原因
+.reason{
+  .flex-space-between{
+    >span{
+      margin-left:12px;
+      color:#0854A1;
+      font-size:13px;
+      line-height:26px;
+      cursor: pointer;
+      &.import{
+        position: relative;
+        width: 26px;
+        span,input{
+          position: absolute;
+          display: inline-block;
+          width: 120px;
+          height:20px;
+          cursor: pointer;
+        }
+        input{
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+.reason-modal{
+  .ant-modal{
+    .ant-modal-title{
+      i{
+        color:#BB0000;
+        margin-right:8px;
+      }
+    }
+  }
+}
+//过滤数据组件
+.filter-data{
+  .header{
+    padding: 0 16px 12px 16px;
+    border-bottom:1px solid rgba(217,217,217,1);
+    >span{
+      font-size:16px;
+    }
+    .tab{
+      border: 1px solid #0854A0;
+      border-radius: 4px;
+      i{
+        padding: 4px 8px;
+        font-size: 18px;
+      }
+      .active{
+        color:#fff;
+        background: #0854A0;
+      }
+    }
+  }
+  .contents{
+    .item{
+      height:38px;
+      padding:6px 16px;
+      box-shadow: inset 0 -1px 0 0 #EDEDED;
+    }
+    .ant-checkbox-wrapper{
+      margin-right: 12px;
+    }
+  }
+}
+//设备参数分析-监控
+.real-time-monitoring{
+  .header{
+    height:128px;
+    padding:16px 48px 0 48px;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(25, 25, 25, 0.15), 0 1px 4px 0 rgba(25, 25, 25, 0.1);
+    .lef{
+      display: flex;
+      justify-content: flex-start;
+      div.l{
+        height:40px;
+        margin-top: 50px;
+        padding-right: 20px;
+        border-right: 1px solid #D9D9D9;
+        span{
+          font-size:24px;
+          margin-right:12px;
+          &:last-child{
+            font-size:14px;
+            color:#6F7275;
+          }
+        }
+      }
+      .tabs{
+        .item{
+          width:96px;
+          height:100%;
+          font-size:12px;
+          margin-left: 20px;
+          padding: 28px;
+          text-align: center;
+          &.active{
+            border-bottom: 2px solid #0854A0;
+            p{
+              background: #0854A0;
+              i{
+                color: #fff;
+              }
+            }
+          }
+          p{
+            width: 40px;
+            height:40px;
+            border-radius: 20px;
+            border:1px solid #0854A0;
+            position: relative;
+            i{
+              position: absolute;
+              top:3px;
+              left:10px;
+              font-size: 20px;
+              color: #0854A0;
+            }
+            span.badge{
+              position: absolute;
+              top: -5px;
+              right: -5px
+            }
+          }
+        }
+      }
+    }
+    .rig{
+      font-family: PingFangSC-Regular;
+      color:#666;
+    }
+  }
+  .contents{
+    padding:20px 2% 0;
+    .item{
+      width: 350px;
+      border:1px solid #d9d9d9;
+      border-radius: 4px;
+      background: #fff;
+      margin:0 20px 20px 0;
+      .card-header{
+        padding:16px;
+        .avator{
+          width:40px;
+          height:40px;
+          margin-right:12px;
+          background: #0F828F;
+          border-radius: 4px;
+        }
+        p{
+          margin:0;
+          line-height:24px;
+        }
+      }
+      .content{
+        .list-header{
+          height:46px;
+          line-height:46px;
+          padding:0 22px 0 18px;
+          background-color: #f3f4f5;
+          box-shadow: inset 0 -1px 0 0 #D9D9D9;
+        }
+        ul{
+          margin:0;
+          height:340px;
+          overflow-y: auto;
+          li{
+            height:46px;
+            line-height:46px;
+            padding:0 22px 0 18px;
+            box-shadow: inset 0 -1px 0 0 #EDEDED;
+            &:last-child{
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//抽屉
+.drawer{
+  .ant-drawer-wrapper-body{
+    background: rgba(255,255,255,0.65);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 8px 0 rgba(0,0,0,0.30);
+    .ant-drawer-body{
+      .ant-tabs-tab{
+        width: 100px;
+        text-align: center;
+      }
+    }
+  }
+}
+//通知
+.equipment-monitoring{
+  .create-device-page{
+    .head-params{
+      >div{
+        margin-right: 56px;
+        span{
+          margin-right: 8px;
+        }
+      }
+      p{
+        font-size: 24px;
+        margin-top: 10px;
+        &.statu{
+          color: #32363A;
+        }
+        &.abnormal{
+          color: #107E3E;
+        }
+        &.value{
+          color: #515559;
+        }
+      }
+    }
+  }
+}
+.create-param{
+  .default-form{
+    input{
+      border:none;
+    }
+  }
+}

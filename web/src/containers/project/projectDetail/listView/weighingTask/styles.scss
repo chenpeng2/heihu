@@ -1,0 +1,31 @@
+.createdTaskContainer {
+  background-color: white;
+  margin: 0 20px 10px 20px;
+  border: 1px solid #eaecf1;
+  position: relative;
+  .header {
+    display: flex;
+    background-color: #fafafa;
+    padding: 13px 19px;
+    align-items: center;
+  }
+  .subItemContainer {
+    padding: 0 20px;
+    margin: 20px 0;
+    color: #9b9b9b;
+  }
+  :global {
+    .ant-collapse {
+      .ant-collapse-item {
+        .ant-collapse-content {
+          padding: 0;
+          .ant-collapse-content-box {
+            .taskDetailContainer {
+              padding: 0 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

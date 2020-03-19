@@ -1,0 +1,49 @@
+.equipmentManufacturerDetail {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.detailHeaders {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.deleteModal {
+  :global {
+    .ant-confirm-body-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .ant-confirm-body {
+        width: 100%;
+        margin-bottom: 60px;
+        & > .anticon {
+          font-size: 36px;
+        }
+        .ant-confirm-title {
+          // font-size: 18px;
+        }
+        .ant-confirm-content {
+          // font-size: 14px;
+          margin-left: 52px;
+        }
+      }
+      .ant-confirm-btns {
+        .ant-btn {
+          width: 114px;
+          height: 32px;
+          line-height: 32px;
+          border-radius: 3px;
+          &:last-child {
+            background-color: $error;
+            border-color: $error;
+          }
+        }
+        button + button {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}

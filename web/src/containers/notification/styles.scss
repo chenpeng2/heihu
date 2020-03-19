@@ -1,0 +1,94 @@
+.notificationCardWrapper {
+  padding: 10px 20px;
+  height: 100%;
+}
+
+.notificationCard {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.readMessages {
+  background-color: #FAFAFA;
+  z-index: 1;
+  > * {
+    opacity: 0.7;
+  }
+}
+
+.notificationCategoryCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 87px;
+  width: 100%;
+  padding: 15px 20px 15px 30px;
+  cursor: pointer;
+}
+
+.notificationTitle {
+  display: flex;
+  align-items: center;
+}
+
+.categoryTitle {
+  width: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.notificationPreview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.notificationCategoryTitle {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.notificationContent {
+  word-break: break-all;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.setting {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  :global {
+    .ant-radio-group {
+      margin-left: 20px; 
+      width: 158px;
+      display: flex;
+      justify-content: space-between;
+      label {
+        margin: 0;
+      }
+      span {
+        font-size: 14px;
+        color: #5A5A5A;
+      }
+    }
+  }
+}
+
+.unconfigurableSetting {
+  // :global {
+    > * {
+      opacity: 0.3;
+    }
+  // }
+}

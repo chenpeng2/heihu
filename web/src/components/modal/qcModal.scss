@@ -1,0 +1,30 @@
+.detail {
+  border: 1px solid rgba(0, 20, 14, 0.1);
+  background-color: #fafafa;
+  margin: 20px;
+  padding: 20px;
+  font-size: 12px;
+  .row {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .row > span:first-child {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    margin-right: 20px;
+    text-align: right;
+    display: inline-block;
+    color: $fontSub;
+  }
+}
+
+.index {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  text-align: center;
+  line-height: 19px;
+  width: 19px;
+  height: 19px;
+  color: #fff;
+}

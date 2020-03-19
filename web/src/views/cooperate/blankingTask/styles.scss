@@ -1,0 +1,7 @@
+.materialDownIcon {
+  margin-left: 2px;
+  transition: all 0.2s ease;
+  &:hover {
+    transform: rotate(180deg);
+  }
+}

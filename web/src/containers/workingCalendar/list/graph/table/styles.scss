@@ -1,0 +1,86 @@
+$containerWidth: 800px;
+$containerHeight: 400px;
+$tableHeaderHeight: 50px;
+$hideScrollPx: 20px;
+
+.tableContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.fixedLeftContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow-x: hidden; // 隐藏scroll
+  overflow-y: scroll;
+}
+
+.hideScrollBar {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.tableHeader {
+  overflow: scroll;
+  padding-bottom: $hideScrollPx;
+  margin-bottom: -$hideScrollPx;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tableHeaderCell {
+  border-right: 1px solid $border;
+  border-bottom: 1px solid $border;
+  overflow-x: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  background: $white;
+}
+
+.tableBodyContainer {
+  max-width: $containerWidth;
+  max-height: $containerHeight - $tableHeaderHeight;
+  overflow: auto;
+  background: $white;
+  z-index: 10000;
+  background: $white;
+
+  .tableRow:last-child {
+    .tableCell {
+      border-bottom: none;
+    }
+  }
+
+  // 加这些style是为了让滚动条可以实现不被左边固定的column挡住
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $secondaryGrey;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track:horizontal {
+    margin-left: 200px;
+  }
+}
+
+.tableRow {
+  white-space: nowrap;
+}
+
+.tableCell {
+  border-right: 1px solid $border;
+  border-bottom: 1px solid $border;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  box-sizing: border-box;
+  background: $white;
+}

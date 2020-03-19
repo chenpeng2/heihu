@@ -1,0 +1,8 @@
+.actionButtonContainer {
+  background-color: $white;
+
+  &:hover{
+    color: $primary;
+    opacity: 0.8;
+  }
+}

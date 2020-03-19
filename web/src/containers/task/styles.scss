@@ -1,0 +1,35 @@
+.page-button {
+  width: 100px;
+  height: 32px;
+  background-color: $blacklakeGreen;
+  color: $white;
+  margin-bottom: 20px;
+  margin-left: 110px;
+}
+.page-button:hover {
+  background-color: $blacklakeGreen;
+  color: $white;
+  cursor: pointer;
+}
+.modal-button {
+  width: 150px;
+  height: 32px;
+  background-color: $blacklakeGreen;
+  color: $white;
+  margin-bottom: 10px;
+  margin-left: 50%;
+  margin-top: 12px;
+  transform: translateX(-50px);
+}
+.modal-button:hover {
+  background-color: $blacklakeGreen;
+  color: $white;
+  cursor: pointer;
+}
+.purchaseTask_create {
+  :global {
+    .ant-form-item{
+      display: flex;
+    }
+  }
+}

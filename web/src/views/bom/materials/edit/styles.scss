@@ -1,0 +1,25 @@
+.header {
+  font-size: 16px;
+  padding: 20px 0 30px 20px;
+  margin: 0;
+}
+
+.footer {
+  margin-left: 160px;
+  margin-top: 16px;
+  .cancel {
+    width: 114px;
+    margin-right: 60px;
+  }
+  .ok {
+    width: 114px;
+  }
+}
+
+.editMaterial {
+  :global {
+    .ant-form-horizontal {
+      margin-left: 40px;
+    }
+  }
+}

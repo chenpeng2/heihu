@@ -1,0 +1,169 @@
+:global {
+  .ant-form-item-label label {
+    color: $fontSub;
+  }
+  .ant-dropdown.ant-dropdown-placement-bottomCenter,
+  .ant-dropdown.ant-dropdown-placement-topCenter {
+    display: flex;
+    justify-content: center;
+  }
+  .ant-dropdown.ant-dropdown-placement-bottomCenter.ant-dropdown-hidden,
+  .ant-dropdown.ant-dropdown-placement-topCenter.ant-dropdown-hidden {
+    display: none;
+  }
+}
+
+.addControlsBtn {
+  width: 909px;
+  height: 40px;
+  margin-left: 140px;
+  border: 1px #e5e5e5 dashed;
+  padding: 0;
+  transition: 0s;
+  color: $primary;
+}
+
+.childAddControlsBtn {
+  width: 710px;
+  height: 32px;
+  color: $primary;
+  margin-left: 91px;
+  transition: 0s;
+  padding: 0;
+  background-color: $grey;
+  border: 1px #e5e5e5 dashed;
+  &:hover {
+    background-color: $grey;
+  }
+}
+
+.controlWrapper {
+  display: flex;
+}
+.control {
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  display: flex;
+  padding: 16px 20px 8px 29px;
+  justify-content: space-between;
+
+  :global {
+    .ant-row.ant-form-item {
+      margin-bottom: 8px;
+      .ant-form-item-label {
+        width: 84px;
+        // height: 39px;
+        margin-right: 6px;
+        label {
+          color: #5a5a5a;
+        }
+      }
+    }
+  }
+}
+
+.actionBox {
+  display: flex;
+  margin-right: 8px;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  justify-content: space-between;
+}
+
+.settingPopover {
+  top: 45px !important;
+}
+
+.settingContent {
+  padding-right: 7px;
+  :global {
+    .uploadBox {
+      .ant-upload-list {
+        width: 200px;
+      }
+    }
+    .ant-upload-select {
+      display: none !important;
+    }
+    .modal-body-form {
+      margin: unset !important;
+      padding: unset !important;
+      border: unset !important;
+      background: unset !important;
+    }
+    .ant-row.ant-form-item {
+      .ant-form-item-label {
+        width: 40px;
+        margin-right: 20px;
+        label {
+          color: #9b9b9b;
+        }
+      }
+      &:first-child {
+        margin-bottom: -10px;
+        .ant-radio-group {
+          display: flex;
+          .ant-radio-wrapper {
+            height: 40px;
+            line-height: 40px;
+            &:first-child {
+              margin-right: 43px;
+            }
+          }
+        }
+      }
+      &:last-child {
+        .ant-radio-group {
+          display: flex;
+          .ant-radio-wrapper {
+            height: 40px;
+            line-height: 40px;
+            &:first-child {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+      .ant-radio-button-wrapper {
+        background-color: #04be75;
+        border-color: transparent;
+        color: white;
+      }
+      .ant-radio-button-wrapper:hover {
+        border-color: transparent;
+        color: white;
+      }
+    }
+  }
+}
+
+.addAttachment {
+  :global {
+    .uploadBox {
+      .ant-upload-list {
+        width: 300px;
+      }
+    }
+    .ant-upload-select {
+      display: inline-block !important;
+    }
+  }
+}
+
+.inModalFotter {
+  padding: 40px 0 20px 45px;
+  .cancel {
+    width: 114px;
+    margin-right: 60px;
+  }
+  .ok {
+    width: 114px;
+  }
+}
+
+.header {
+  font-size: 16px;
+  padding: 20px 0 30px 20px;
+  margin: 0;
+}

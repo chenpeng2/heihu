@@ -1,0 +1,14 @@
+.popikonwContent {
+  max-width: 200px;
+  :global {
+    .anticon {
+      line-height: 1.3;
+    }
+    .anticon-close-circle {
+      color: $error;
+    }
+    .anticon-exclamation-circle {
+      color: $orange;
+    }
+  }
+}

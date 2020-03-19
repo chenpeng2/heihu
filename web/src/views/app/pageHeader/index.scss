@@ -1,0 +1,25 @@
+:global {
+  .page-header {
+    .tip-item {
+      cursor: pointer;
+      .ant-btn {
+        margin-right: 10px;
+      }
+      div:hover {
+        color: $blacklakeGreen;
+      }
+    }
+    .tip-item:hover {
+      .ant-btn:hover,
+      .ant-btn:focus,
+      .ant-btn:active,
+      .ant-btn.active {
+        background: $blacklakeGreen;
+      }
+      .ant-btn:hover,
+      .ant-btn:focus {
+        color: #fff;
+      }
+    }
+  }
+}

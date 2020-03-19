@@ -1,0 +1,21 @@
+.button {
+  height: 28px;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+.buttonSm {
+  height: 20px;
+}
+
+body {
+  :global {
+    .ant-btn-danger {
+      background-color: $error;
+      border-color: $error;
+      color: #fff;
+    }
+  }
+}

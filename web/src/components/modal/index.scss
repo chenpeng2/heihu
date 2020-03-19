@@ -1,0 +1,104 @@
+:global {
+  .relay-modal {
+    .ant-modal-header {
+      padding: 20px 20px 0 20px;
+      border-bottom: none;
+
+      .ant-modal-title {
+        width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .ant-modal-body {
+      margin: 0;
+      padding: 0;
+      background: $white;
+      overflow: hidden;
+    }
+    .ant-form-item {
+      margin-bottom: 14px;
+    }
+    .ant-form-item-label {
+      text-align: right !important;
+      margin-right: 16px !important;
+      //padding: 6px 0 0 !important;
+      .ant-form-item-required:before {
+        margin-right: 8px;
+      }
+    }
+    .modal-body-form {
+      margin: 30px 50px 30px 50px;
+      padding: 20px 0;
+      border: 1px solid #edeef3;
+      background: #fbfbfb;
+    }
+    .relay-form-footer {
+      margin-bottom: 30px;
+    }
+    .ant-form-item-control-wrapper {
+      width: 550px;
+    }
+    .ant-form-vertical .ant-form-item-label,
+    .ant-col-24.ant-form-item-label,
+    .ant-col-xl-24.ant-form-item-label {
+      padding: 0;
+      line-height: 32px;
+    }
+    .ant-modal-footer {
+      border-top: none;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+  }
+  //单独给modal里面的form表单
+  .relay-modal-new {
+    .modal-body-form {
+      margin: 30px 50px 30px 50px;
+      padding: 0;
+      border: none;
+      background: #fff;
+      .ant-form {
+        padding: 20px 0 6px 0;
+        border: 1px solid #edeef3;
+        background: #fbfbfb;
+      }
+    }
+  }
+
+  .gantt-form-wrapper {
+    .ant-modal-body {
+      .modal-body-form {
+        border: none;
+        background: #fff;
+        margin: 0 50px 0 50px;
+      }
+    }
+  }
+}
+
+.ganttModal {
+  :global {
+    .ant-modal {
+      background: #fff;
+      overflow: visible;
+    }
+    .ant-modal-content {
+      box-shadow: none;
+      .ant-modal-body {
+        padding: 10px 10px 10px 20px;
+      }
+    }
+  }
+}
+
+.footerOk {
+  width: 180px;
+  margin-left: 46px;
+}
+
+.footerCancel {
+  width: 180px;
+}

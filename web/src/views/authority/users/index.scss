@@ -1,0 +1,125 @@
+.childrenSplit > * {
+  margin-right: 10px;
+}
+
+.list {
+  margin-left: 20px;
+  .filter {
+    display: flex;
+    .searchButton {
+      margin: 20px;
+    }
+  }
+  .tipIcon {
+    margin-left: 10px;
+    color: $primary;
+  }
+}
+
+.accountUsed {
+  width: 250px;
+  position: relative;
+  top: 14px;
+}
+
+.tipContent {
+  color: #000;
+  display: flex;
+  .contact {
+    margin-bottom: 16px;
+  }
+  .contactIcon {
+    color: $primary;
+    margin-right: 10px;
+  }
+}
+
+.detail {
+  margin: 28px 20px 0 25px;
+  .header {
+    margin-bottom: 30px;
+    .right {
+      float: right;
+      & > * {
+        margin-left: 20px;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    button {
+      width: 100px;
+    }
+  }
+}
+.workDepartmentSelect {
+  :global {
+    .ant-select-dropdown-menu-item-group-title {
+      color: $lightGrey !important;
+    }
+  }
+}
+.title {
+  font-size: 18px;
+}
+.row {
+  margin-bottom: 20px;
+  display: flex;
+}
+.row > span:first-child {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  margin-right: 20px;
+  text-align: right;
+  display: inline-block;
+  color: $fontSub;
+  line-height: 20px;
+}
+.number {
+  color: $primary;
+  margin-left: 10px;
+}
+//add
+
+.onSaveSamePop {
+  width: 200px;
+  .top {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    .unuse {
+      margin-left: 20px;
+    }
+  }
+  .contact {
+    margin-bottom: 20px;
+  }
+}
+
+// common
+.contactIcon {
+  color: $alertYellow;
+  margin-right: 10px;
+}
+
+.resetPasswordForm {
+  :global {
+    .ant-form-vertical .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-input-suffix {
+      color: #00140E;
+      opacity: 0.4;
+      cursor: pointer;
+      :active {
+        color: $primary;
+        opacity: 1;
+      }
+    }
+  }
+}

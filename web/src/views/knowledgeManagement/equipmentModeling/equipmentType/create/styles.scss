@@ -1,0 +1,26 @@
+.createEquipmentType {
+  :global {
+    .ant-form-item-label label{
+      color: $fontSub;
+    }
+    .resourceCategory div{
+      height: 100%;
+    }
+    .ant-radio-group {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.createHeaders {
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.createSetting {
+  padding-bottom: 20px; 
+}

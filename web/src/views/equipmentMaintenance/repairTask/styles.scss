@@ -1,0 +1,10 @@
+.repairTask {
+  :global {
+    .ant-tabs-nav-scroll {
+      background-color: $grey;
+      padding: 10px 0 0 30px;
+      color: $fontSub;
+      border-bottom: 2px solid $borderGrey;
+    }
+  }
+}

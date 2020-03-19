@@ -1,0 +1,14 @@
+export const MACHINING_MATERIAL_TYPE_PARTS = '1';
+
+export const MACHINING_MATERIAL_TYPE_TOOLING = '2';
+
+export const MACHINING_MATERIAL_TYPE = {
+  [MACHINING_MATERIAL_TYPE_PARTS]: {
+    key: MACHINING_MATERIAL_TYPE_PARTS,
+    label: '备件',
+  },
+  [MACHINING_MATERIAL_TYPE_TOOLING]: {
+    key: MACHINING_MATERIAL_TYPE_TOOLING,
+    label: '工装',
+  },
+};

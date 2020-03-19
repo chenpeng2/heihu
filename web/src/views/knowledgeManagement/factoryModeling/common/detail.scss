@@ -1,0 +1,33 @@
+.detailHeader {
+  margin: 20px;
+  position: relative;
+  .detail {
+    margin-left: 20px;
+    font-size: 12px;
+    .row {
+      margin-bottom: 20px;
+      display: flex;
+    }
+    .row > span:first-child {
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
+      margin-right: 20px;
+      text-align: right;
+      display: inline-block;
+      color: $fontSub;
+    }
+  }
+}
+
+.operation {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,26 @@
+.layoutHeader {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  height: 50px;
+  box-shadow: 0px 2px 4px 0px rgba(142, 152, 174, 0.14);
+  z-index: 1;
+  margin-bottom: 1px;
+}
+
+.layoutMain {
+  overflow: auto;
+  position: relative;
+}
+
+.layoutContainer {
+  background: #fff;
+  position: relative;
+}
+
+.layoutContent {
+  background: #fff;
+  padding: 24px;
+  margin-top: 12px;
+  border-radius: 4px;
+}

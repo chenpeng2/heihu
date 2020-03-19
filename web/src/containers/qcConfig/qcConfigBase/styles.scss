@@ -1,0 +1,157 @@
+:global {
+  .importQcConfig.relay-modal {
+    .modal-body-form {
+      margin: 30px 50px 30px 50px;
+      padding: 10px 0;
+      background-color: #fff;
+      border: none;
+    }
+  }
+  .ant-table-fixed-right {
+    // inputNumber的箭头z-index为2
+    z-index: 3;
+  }
+}
+.qcCheckPointContainer {
+  margin-right: 20px;
+  border: 1px solid #edeef3;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  margin-bottom: 10px;
+  position: relative;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 15px;
+  }
+  .removeQcCheckPiontItem {
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    cursor: pointer;
+    color: #f4335b;
+  }
+  .footer {
+    margin-left: 120px;
+    margin-top: 16px;
+    .cancel {
+      width: 114px;
+      margin-right: 60px;
+    }
+    .ok {
+      width: 114px;
+    }
+  }
+}
+
+.qcCheckItemTableContainer {
+  :global {
+    .ant-table-row-indent {
+      display: none;
+    }
+    .ant-table-thead > tr:first-child > th:first-child {
+      padding-left: 35px;
+    }
+  }
+  width: 120%;
+  position: relative;
+  .removeIcon {
+    cursor: pointer;
+    color: #f4335b;
+    margin-right: 5px;
+  }
+  .formItem {
+    padding: 0 5px;
+  }
+
+  .caret {
+    position: absolute;
+    display: block;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    line-height: 10px;
+    overflow: hidden;
+
+    &:hover {
+      color: $blacklakeGreen;
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      color: #9b9b9b;
+    }
+  }
+
+  .text {
+    color: #9b9b9b;
+    font-size: 16px;
+    padding: 2px 5px;
+  }
+  .tableContainer {
+    :global {
+      .ant-form-item {
+        margin-bottom: 0;
+        padding-left: 0;
+      }
+      .ant-form-item-control-wrapper {
+        width: auto;
+      }
+    }
+  }
+}
+
+.checkItem {
+  border: 1px solid #edeef3;
+  background: #fbfbfb;
+  padding-top: 16px;
+  margin: 5px 40px;
+}
+
+.qcCheckPointContainerInModal {
+  max-height: 400px;
+  overflow: scroll;
+}
+
+.materialList {
+  width: 120%;
+  :global {
+    .tableContainer___31DBS {
+      margin: 0;
+    }
+    .ant-form-item {
+      padding-right: 0;
+    }
+  }
+}
+
+.customMonomer {
+  display: flex;
+  margin-left: 120px;
+  :global {
+    .ant-form-item {
+      padding-right: 0;
+      margin-bottom: 0;
+    }
+    .ant-form-item-control-wrapper {
+      width: unset;
+    }
+  }
+}
+
+.cardModelTitle {
+  margin-right: 50px;
+}
+
+.tableFirstColumn {
+  display: flex;
+}
+
+.tableFirstColumn_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}

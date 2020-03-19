@@ -1,0 +1,363 @@
+.infinite-scroll-preloader.preloader {
+    &.preloader-hide {
+        visibility: hidden;
+    }
+}
+.filter-popup {
+    .page-content {
+        background: #e8e8ed
+    }
+    .block {
+        margin-top: 0px;
+    }
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .button {
+            margin: 8px 0;
+            width: calc(50% - 16px);
+            &.unchecked {
+                color: #76767B;
+                border-color: #76767B;
+            }
+        }
+    }
+    .label {
+        font-size: 17px;
+        color: #3F3A3A;
+        margin-bottom: 2px;
+    }
+}
+.filter-items {
+    display: flex;
+    padding: 3px 4px;
+    .button {
+        margin: 3px 4px;
+        height: 22px;
+        line-height: 22px;
+    }
+}
+.work-page {
+    .detail-1 {
+        margin-left: 16px;
+        padding: 10px 16px 10px 0;
+        color: #76767B;
+        font-size: 13px;
+        .title {
+            color: #3F3A3A;
+            font-size: 17px;
+        }
+        .meta {
+            display: flex;
+            justify-content: space-between
+        }
+    }
+    .detail-2 {
+        padding: 5px 16px;
+        min-height: 98px;
+        box-sizing: border-box;
+        .tr {
+            display: flex;
+        }
+        .td {
+            text-align: right;
+            width: 40%;
+            font-size: 17px;
+            color: #76767B;
+            line-height: 22px;
+            &.label {
+                color: #3678AF;
+            }
+            &.strong {
+                color: #3F3A3A;
+            }
+            &.th {
+                color: #3F3A3A;
+                flex: 1;
+                white-space: nowrap;
+                font-size: 13px;
+            }
+        }
+    }
+}
+.shop-page {
+    .page-content {
+        background: rgba(68,94,117,.6);
+    }
+    .swiper-container {
+        height: 100%;
+        .inner {
+            height: calc(100% - 48px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            margin-left: 26px;
+            margin-right: 26px;
+            .head {
+                display: flex;
+                padding: 16px;
+                align-items: center;
+            }
+            .pic {
+                border-radius: 8px;
+                display: inline-block;
+                background: #0F828F;
+                width: 48px;
+                height: 48px;
+                margin-right: 12px;
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                line-height: 48px;
+            }
+            .name {
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 8px;
+            }
+            .meta {
+                color: #6F7275;
+                line-height: 16px;
+            }
+            .part {
+                padding: 8px 0;
+            }
+            .title {
+                margin: 0 0 8px 20px;
+                color: #515559;
+                line-height: 22px;
+            }
+            .media {
+                font-size: 24px;
+                color: #6F7275;
+            }
+            .item {
+                margin: 12px 16px 12px 20px;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+            }
+            .lable {
+                color: #6F7275;
+                line-height: 22px;
+            }
+        }
+        .swiper-pagination-bullet-active {
+            background: #fff;
+        }
+    }
+}
+.progress-text {
+    position: absolute;
+    left: 50%;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-left: -25px;
+    top: 1px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+}
+.shop-list-page {
+    .item-header {
+        font-size: 17px;
+        color: #3F3A3A;
+        line-height: 22px;
+    }
+    .list {
+        .item-media {
+            line-height: 22px;
+            font-size: 15px;
+            color: #76767B;
+        }
+        .item-media,
+        .item-inner {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        .item-after {
+            font-size: 15px;
+            text-align: right
+        }
+        .sap-icon {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .green {
+            color: #107E3E;
+        }
+        .yellow {
+            color: #E9730C;
+        }
+        .red {
+            color: #b00
+        }
+        .gray {
+            color: #687173
+        }
+        .item-content {
+            align-items: flex-start;
+            padding-left: 7px;
+        }
+        .meta {
+            margin-top: 4px
+        }
+        .strong {
+            color: #3F3A3A;
+            font-size: 17px;
+        }
+        .progress-box {
+            font-size: 14px;
+            color: #32363A;
+        }
+        .progressbar {
+            margin-right: 4px;
+            display: inline-block;
+            width: 126px;
+            height: 6px;
+        }
+    }
+}
+
+.shop-detail-page {
+    .page-content {
+        background: #E8E8ED;
+    }
+    .banner {
+        min-height: 161px;
+        background: #445E75;
+        padding: 8px 16px;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 15px;
+        line-height: 20px;
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .name {
+            font-size: 17px;
+            line-height: 22px;
+            margin-bottom: 16px;
+        }
+        .chip {
+            margin-right: 9.6px;
+        }
+        .meta {
+            margin: 10px 0;
+        }
+        .progress-box {
+            display: flex;
+            align-items: center;
+            .inner {
+                margin: 0 6px 0 14px;
+                min-width: 126px;
+            }
+        }
+        .progressbar {
+            height: 6px;
+        }
+    }
+    .list {
+        line-height: 20px;
+        .top {
+            .item-title {
+                font-size: 15px;
+                color: #4E4E52;
+            }
+        }
+        .item-content {
+            padding-left: 0px;
+        }
+    }
+    .list-simple {
+        .item-inner {
+            padding-left: 16px;
+        }
+        .item-title {
+            width: 100%;
+            font-size: 15px;
+            color: #3F3A3A;
+        }
+        .item-header {
+            margin-bottom: 3px;
+            color: #76767B;
+        }
+        .progressbar {
+            display: inline-block;
+            width: 126px;
+            height: 6px;
+        }
+    }
+    .list-with-meida {
+        margin: 30px 0;
+        .top {
+            .item-title {
+                padding-left: 16px;
+            }
+        }
+        .item-media {
+            margin-left: 16px;
+        }
+        .sap-icon {
+            font-size: 24px;
+            color: #3678AF;
+            border-radius: 8px;
+            display: inline-block;
+            border: 1px solid;
+            width: 36px;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+        }
+        .item-title {
+            color: #3F3A3A;
+            font-size: 17px;
+            color: #D9364C;
+        }
+        .item-header {
+            margin-bottom: 3px;
+            font-size: 17px;
+            color: #3F3A3A;
+        }
+        .item-after {
+            font-size: 15px;
+            text-align: right;
+            color: #76767B;
+        }
+    }
+}
+
+.timeout-page {
+    .item-content {
+        padding-left: 0px;
+    }
+    .item-media {
+        margin-left: 16px;
+    }
+    .item-title {
+        font-size: 15px;
+        color: #76767B;
+    }
+    .item-header {
+        margin-bottom: 3px;
+        font-size: 17px;
+        color: #3F3A3A;
+    }
+    .item-after {
+        font-size: 15px;
+        color: #76767B;
+        text-align: right;
+    }
+    .strong {
+        color: #D9364C;
+    }
+}

@@ -1,0 +1,92 @@
+.loginWrapper {
+  width: 100%;
+  height: 100vh;
+  background: url(/BG.png) no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .blLogo {
+    cursor: pointer;
+    width: 280px;
+    height: 70px;
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    transform: scale(0.55);
+    background: url(/logo.png) no-repeat;
+  }
+
+  .loginTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .loginFormContainer {
+    background-color: $white;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 380px;
+    min-height: 240px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .loginHeader {
+      width: 300px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+
+      img {
+        display: block;
+        height: 100%;
+      }
+    }
+
+    .loginContent {
+      width: 100%;
+
+      .loginTypeFilter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 17px 14px 17px;
+        font-size: 14px;
+
+        & > * {
+          cursor: pointer;
+          color: rgba(0, 20, 14, 0.2);
+        }
+
+        .active {
+          color: $navBlack;
+        }
+      }
+    }
+
+    .loginForm {
+      width: 100%;
+      :global {
+        .ant-form-item {
+          margin-bottom: 5px;
+          display: block;
+        }
+        .ant-input-group-wrapper {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

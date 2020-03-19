@@ -1,0 +1,10 @@
+export const STORAGE_LEVEL = {
+  FIRST_STORAGE_LEVEL: '1',
+  SECOND_STORAGE_LEVEL: '2',
+  WAREHOUSE_LEVEL: '3',
+};
+
+export const STORAGE_STATUS = {
+  ENABLE: 1,
+  DISABLE: 0,
+};

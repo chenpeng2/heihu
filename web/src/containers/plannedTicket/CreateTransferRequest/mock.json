@@ -1,0 +1,107 @@
+{
+  "workOrderData": {
+    "code": "0827jhgd001-0820wl1",
+    "materialCode": "0820wl1",
+    "materialName": "0820物料1",
+    "materialUnit": "pcs",
+    "materialDesc": "120.00*720.00*2.00*0.15+4.00+1.00mm，面膜型号：TWG15361-D10，扣型：DL 400，PE膜颜色：A扣灰，PE LOGO：ISOCORE，PE膜底纹：蜂巢纹，PE膜厚度：1.0，PE膜密度：HDPE，压纹：IRE，硬塑板颜色：银灰，硬塑板厚度：4.0，用料：全新料，是否打标：否，淋幕油种类：晶盾",
+    "planAmount": 9.25,
+    "canUseInventory": 0,
+    "amount": 9.25,
+    "processRouteCode": null,
+    "mbomVersion": "wwq组件分配是",
+    "ebomVersion": null,
+    "parentSeq": [
+      {
+        "processSeq": "1",
+        "processCode": "0000000157",
+        "processName": "test-清洁",
+        "inputMaterials": null,
+        "deliverable": null
+      }
+    ],
+    "children": []
+  },
+  "transferReqData": [
+    {
+      "materialCode": "11C1DC214",
+      "materialName": "说明书",
+      "materialUnit": "pcs",
+      "amount": 10.0,
+      "canUseInventory": 0,
+      "workOrderCode": "0827jhgd001",
+      "processSeqs": [
+        {
+          "processSeq": "1",
+          "processCode": "0000000148",
+          "processName": "0312工序1",
+          "inputMaterials": null,
+          "deliverable": null
+        }
+      ],
+      "requireTime": null,
+      "issueWarehouseId": null,
+      "issueWarehouseName": null
+    },
+    {
+      "materialCode": "11C1PB739",
+      "materialName": "纸盒",
+      "materialUnit": "pcs",
+      "amount": 10.0,
+      "canUseInventory": 0,
+      "workOrderCode": "0827jhgd001",
+      "processSeqs": [
+        {
+          "processSeq": "1",
+          "processCode": "0000000148",
+          "processName": "0312工序1",
+          "inputMaterials": null,
+          "deliverable": null
+        }
+      ],
+      "requireTime": null,
+      "issueWarehouseId": null,
+      "issueWarehouseName": null
+    },
+    {
+      "materialCode": "11C1TB002",
+      "materialName": "贴纸",
+      "materialUnit": "pcs",
+      "amount": 20.0,
+      "canUseInventory": 0,
+      "workOrderCode": "0827jhgd001",
+      "processSeqs": [
+        {
+          "processSeq": "1",
+          "processCode": "0000000148",
+          "processName": "0312工序1",
+          "inputMaterials": null,
+          "deliverable": null
+        }
+      ],
+      "requireTime": null,
+      "issueWarehouseId": null,
+      "issueWarehouseName": null
+    },
+    {
+      "materialCode": "7C050850",
+      "materialName": "LVT硬塑锁扣",
+      "materialUnit": "pcs",
+      "amount": 123.0,
+      "canUseInventory": 0,
+      "workOrderCode": "0827jhgd001",
+      "processSeqs": [
+        {
+          "processSeq": "1",
+          "processCode": "0000000148",
+          "processName": "0312工序1",
+          "inputMaterials": null,
+          "deliverable": null
+        }
+      ],
+      "requireTime": null,
+      "issueWarehouseId": null,
+      "issueWarehouseName": null
+    }
+  ]
+}

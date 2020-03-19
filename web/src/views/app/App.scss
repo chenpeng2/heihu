@@ -1,0 +1,173 @@
+:global {
+  body,
+  html {
+    height: 100%;
+    color: $darkGrey;
+  }
+
+  .layout-aside {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    min-width: 1280px;
+  }
+
+  .layout-aside .layout-sider {
+    z-index: 10;
+    position: absolute;
+    overflow: auto;
+    padding-bottom: 0px;
+    height: 100%;
+  }
+
+  .layout-sider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .openIcon {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    margin-top: -15px;
+    z-index: 20;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    opacity: 1;
+    transition: 300ms;
+    .anticon {
+      line-height: 30px;
+    }
+  }
+
+  .layout-aside .layout-sider > .menu {
+    margin-bottom: 20px;
+  }
+
+  .ant-menu-submenu-title {
+    z-index: 10;
+  }
+
+  .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+    padding: 0 18px !important;
+  }
+
+  .ant-input-group-wrapper {
+    display: block;
+  }
+
+  .logout-button {
+    height: 30px;
+    background-color: #383838;
+    border: hidden;
+    color: #6f6f6f;
+  }
+
+  .ant-btn.editable-add-btn {
+    color: #fff;
+    background-color: #0dc7a3;
+    &:disabled {
+      color: rgba(0, 0, 0, 0.25);
+      background-color: #f7f7f7;
+    }
+  }
+
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+    color: #0dc7a3 !important;
+  }
+
+  .ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub,
+  .ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub.ant-menu-inline {
+    background-color: $navBlack;
+  }
+
+  .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item .iconfont + span,
+  .ant-menu-inline-collapsed > .ant-menu-item .iconfont + span,
+  .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .iconfont + span {
+    max-width: 0;
+    display: inline-block;
+    opacity: 0;
+  }
+
+  .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+    background: $lightGreen;
+  }
+
+  .ant-menu-vertical .ant-menu-item,
+  .ant-menu-inline .ant-menu-item,
+  .ant-menu-vertical .ant-menu-submenu-title,
+  .ant-menu-inline .ant-menu-submenu-title {
+    text-overflow: none;
+  }
+
+  .aside-menu {
+    .ant-layout-sider {
+      background: $navBlack;
+    }
+
+    .ant-menu-item:hover {
+      color: $blacklakeGreen;
+      background: $navBlack;
+    }
+    .ant-menu.ant-menu-dark .ant-menu-item-selected {
+      color: $white;
+      background: $blacklakeGreen;
+    }
+    .ant-layout-sider-children {
+      display: flex;
+      flex-direction: column; // overflow-y: scroll;
+      .ant-menu {
+        flex: 1;
+      }
+    }
+    .openIcon {
+      background: $navBlack;
+      right: -15px;
+    }
+    .openIcon-show {
+      opacity: 1;
+    }
+    .openIcon-hidden {
+      opacity: 0;
+      right: 0;
+    }
+    .extra-container {
+      padding: 0px 24px;
+      overflow: hidden;
+      height: 40px;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    .extra-link {
+      color: $white;
+      text-decoration: none;
+      &:hover {
+        color: $blacklakeGreen;
+      }
+    }
+    .footer-title {
+      bottom: 0;
+      width: 100%;
+      color: $white;
+      font-weight: 600;
+      line-height: 30px;
+      font-size: 13px;
+      height: 30px;
+      padding: 0px 30px;
+      overflow: hidden;
+      flex: 0 0 auto;
+    }
+  }
+  .breadcrumbName1 a:hover {
+    color: $blacklakeGreen;
+  }
+}

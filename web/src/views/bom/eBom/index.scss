@@ -1,0 +1,183 @@
+.ebomListFunc {
+  margin: 0 20px 20px 20px;
+  & > * {
+    margin-right: 20px;
+  }
+}
+
+.logsHeader {
+  margin: 20px;
+  color: $fontSub;
+  & > * {
+    margin-right: 10px;
+  }
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.detailHeader {
+  margin: 20px;
+  position: relative;
+  .detail {
+    margin-left: 20px;
+    font-size: 12px;
+    .row {
+      margin-bottom: 20px;
+      display: flex;
+    }
+    .row > span:first-child {
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
+      margin-right: 20px;
+      text-align: right;
+      display: inline-block;
+      color: $fontSub;
+    }
+  }
+}
+
+.operation {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.createEBom {
+  margin: 20px;
+  .container {
+    margin-left: 20px;
+  }
+  .amountCell {
+    display: flex;
+    padding-right: 10px;
+    .icon {
+      line-height: 40px;
+      cursor: pointer;
+      margin-right: 6px;
+    }
+  }
+}
+.eBomDetail {
+  margin: 20px;
+}
+
+.footer {
+  .cancel {
+    width: 114px;
+    margin-right: 20px;
+  }
+  .ok {
+    width: 114px;
+  }
+}
+
+.tips {
+  display: flex;
+  margin-bottom: 10px;
+  .icon {
+    height: 36px;
+    width: 36px;
+    font-size: 36px;
+    color: $primary;
+  }
+  .msg {
+    margin-left: 18px;
+    .save {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.modalFooter {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  button:first-child {
+    margin-right: 60px;
+  }
+}
+
+.importModal {
+  .upload {
+    margin: 20px 0 10px 0;
+  }
+  :global {
+    .upload-tip {
+      display: inline-block;
+      margin-left: 10px;
+      margin-bottom: 0;
+      color: #8c8c8c;
+      vertical-align: middle;
+    }
+    .ant-modal-header {
+      border-bottom: none;
+      padding: 16px 20px 20px;
+    }
+    .ant-modal-header {
+      border-bottom: none;
+      padding: 16px 20px 20px;
+    }
+    .ant-modal-title {
+      font-size: 16px;
+    }
+    .ant-modal-body {
+      margin: 0 20px 0 38px;
+      font-size: 14px;
+      padding: 0;
+      padding-bottom: 42px;
+      .import-steps {
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .step2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.importTip {
+  padding-top: 42px;
+  :global {
+    .ant-modal-body {
+      padding: 30px;
+    }
+  }
+  .tip {
+    height: 60px;
+    .icon {
+      font-size: 36px;
+      float: left;
+      line-height: 42px;
+    }
+    .iconOk {
+      color: $primary;
+    }
+    .iconError {
+      color: $error;
+    }
+    .right {
+      margin-left: 50px;
+      p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+  }
+}

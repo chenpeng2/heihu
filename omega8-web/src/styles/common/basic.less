@@ -1,0 +1,285 @@
+@import '~antd/dist/antd.css';
+@import './colors.less';
+
+@panel-margin-big-screen: 16px;
+@panel-margin-middle-screen: 8px;
+@panel-margin-little-screen: 4px;
+@container-margin-big-screen: 36px;
+
+@roboto-font-path: '../../asstes/fonts';
+ 
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+
+@font-face {
+    font-family: 'sapicon';
+    src: url('../../asstes/fonts/SAP-icons.ttf') format('truetype');
+}
+
+.sap-icon{
+    font-family: "sapicon" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-filter:before {
+    content: "\e076";
+}
+
+.icon-table-column:before {
+    content: "\e27f";
+}
+
+.icon-setting:before {
+    content: "\e0a6"
+}
+
+.icon-desc::before {
+    content: "\e1fd"
+}
+
+.icon-drop-down::before {
+    content: "\e1f8";
+}
+
+.icon-add-product:before {
+    content: "\e142"
+  }
+  .icon-customer-and-supplier:before {
+    content: "\e0b9"
+  }
+  .icon-offsite-work:before {
+    content: "\e104"
+  }
+  .icon-fridge:before {
+    content: "\e031"
+  }
+  .icon-shipping-status:before {
+    content: "\e0b3"
+  }
+  .icon-org-chart:before {
+    content: "\e0d1"
+  }
+  .icon-slim-arrow-down:before {
+    content: "\e1ef"
+  }
+  .icon-dimension:before {
+    content: "\e176"
+  }
+.icon-diplay-more:before {
+    content: "\e1d3"
+}
+.icon-search:before {
+    content: "\e00d"
+}
+.icon-warning:before {
+    content: "\e201"
+}
+.icon-time-out:before {
+    content: "\e019"
+}
+.icon-check:before {
+    content: "\e203"
+}
+.icon-lateness:before {
+    content: "\e06a"
+}
+.icon-legend:before {
+    content: "\e1ff"
+}
+.icon-full-screen:before {
+    content: "\e166"
+}
+.icon-sys-monitor:before {
+    content: "\e1cc"
+}
+
+.icon-factory::before {
+    content: "\e078"
+}
+
+.icon-email::before {
+    content: "\e037"
+}
+
+.icon-activity-item::before {
+    content: "\e1a9"
+}
+.icon-sales-order::before {
+    content: "\e0c3"
+}
+
+.icon-process::before {
+    content: "\e0c7"
+}
+
+.icon-loaction::before {
+    content: "\e021"
+}
+
+.icon-close::before {
+    content: "\e03e"
+}
+
+
+.roboto-font(@type, @weight, @style) {
+    @font-face {
+        font-family: 'Roboto';
+        src: url('@{roboto-font-path}/72-@{type}.ttf') format('truetype');
+        font-weight: @weight; 
+        font-style: @style;
+    }
+}
+ 
+.roboto-font-one(@type, @weight, @style) {
+    .roboto-font('@{type}', @weight, @style);
+}
+ 
+.roboto-font-pair(@type, @weight) {
+    .roboto-font('@{type}', @weight, normal);
+    .roboto-font('@{type}', @weight, italic);
+}
+ 
+.roboto-font-one('Italic', 200, italic);
+.roboto-font-one('Regular', 400, normal);
+.roboto-font-pair('Light', 300);
+.roboto-font-pair('Bold', 700);
+.roboto-font-pair('Black', 900);
+
+.bl-main-continer {
+    // margin: 14px 48px;
+}
+
+html {
+    font-family: 'Roboto','pingFangSC-Regular'
+}
+//button
+.border-button {
+    border-color: @light-active;
+    color: @light-active;
+    height: 26px;
+}
+
+table {
+    font-size: 12px;
+}
+.ant-btn-link {
+    color: @light-active;
+}
+
+.ant-table-thead > tr > th {
+    padding: 7px 5px;
+}
+
+.ant-table-tbody > tr > td {
+    padding: 0 5px;
+}
+
+.ant-input-number {
+    height: 26px;
+    border-radius: 0px;
+    line-height: 24px;
+    font-size: 12px;
+    .ant-input-number-input {
+        height: 100%;
+    }
+}
+
+.ant-table-body {
+    background-color: #fff;
+    overflow-y: auto;
+    &::-webkit-scrollbar-button {
+        display: none;
+      }
+      &::-webkit-scrollbar-thumb {
+        min-height: 48px;
+        background: #d2d2d2;
+        background-clip: padding-box;
+        border: 3px solid #fff;
+        border-radius: 5px;
+      }
+      
+      &::-webkit-scrollbar-thumb:active {
+        background: #888;
+        border-width: 2px;
+      } 
+}
+
+.ant-select-selection--single {
+    position: relative;
+    height: 26px;
+    cursor: pointer;
+    border-radius: 0;
+    .ant-select-selection__rendered {
+        line-height: 24px;
+    }
+}
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    color: #fff;
+    background: @light-active;
+    border-color: @light-active;
+    &:hover {
+        background: @light-active;
+        border-color: @light-active;
+    }
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: @light-active;
+    border-color: @light-active;
+}
+
+.ant-radio-button-wrapper {
+    &:hover {
+        color: @light-active;
+    }
+}
+.ant-btn {
+    height: 26px; 
+}
+.ant-btn-border-button {
+    height: 26px;
+    border-color: @light-active;
+    color: @light-active;
+}
+
+.ant-btn-primary {
+    color: #fff;
+    background-color: @light-active;
+    border-color: @light-active;
+    height: 26px;
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    background-color: @light-active;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected > a {
+    color: @light-active;
+}
+
+.ant-calendar-selected-date .ant-calendar-date, .ant-calendar-selected-start-date .ant-calendar-date, .ant-calendar-selected-end-date .ant-calendar-date {
+    background: @light-active;
+}
+
+a {
+    color: @light-active;
+}
+

@@ -1,0 +1,22 @@
+.chartContainer {
+  user-select: none;
+
+  .titleContainer {
+    display: flex;
+    background-color: #fafafa;
+    align-items: center;
+    position: relative;
+  }
+  .contentContainer {
+    position: relative;
+    border-bottom: 1px solid #eaecf1;
+    background-color: #fafafa;
+  }
+}
+
+.dropActive {
+}
+
+.dropTarget {
+  border: 1px dashed #0dc7a3;
+}

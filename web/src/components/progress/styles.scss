@@ -1,0 +1,120 @@
+:global {
+  .ProgressContainer {
+    position: relative;
+    .ant-progress-inner {
+      background-color: transparent;
+    }
+
+    .ant-progress.defaultColor-0.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: #3dd27e;
+      }
+    }
+
+    .ant-progress.defaultColor-0-alpha.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(61, 210, 126, 0.2);
+      }
+    }
+
+    .ant-progress.defaultColor-1.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(24, 144, 255, 0.3);
+      }
+    }
+
+    .ant-progress.defaultColor-1-alpha.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(24, 144, 255, 0.3);
+      }
+    }
+
+    .ant-progress.defaultColor-2.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(255, 59, 48, 0.3);
+      }
+    }
+    .ant-progress.defaultColor-2-alpha.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(255, 59, 48, 0.3);
+      }
+    }
+
+    .ant-progress.defaultColor-3.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(250, 173, 20, 0.6);
+      }
+    }
+
+    .ant-progress.defaultColor-3-alpha.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(61, 210, 126, 0.2);
+      }
+    }
+
+    .ant-progress.defaultColor-4.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(126, 211, 33, 0.6);
+      }
+    }
+
+    .ant-progress.defaultColor-4-alpha.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(61, 210, 126, 0.2);
+      }
+    }
+
+    .ant-progress.defaultColor-5.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(255, 59, 48, 0.6);
+      }
+    }
+
+    .ant-progress.defaultColor-5-alpha.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: rgba(61, 210, 126, 0.2);
+      }
+    }
+
+    .ant-progress.defaultColor-6.ant-progress-status-success {
+      .ant-progress-bg {
+        background-image: linear-gradient(
+          67deg,
+          rgba(24, 144, 255, 0.3) 11px,
+          #fff 11px 13px,
+          rgba(24, 144, 255, 0.3) 13px
+        );
+        background-size: 16px 100%;
+        background-position: 0px;
+      }
+    }
+
+    .ant-progress.defaultColor-6-alpha.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: transparent;
+        background-image: linear-gradient(
+          67deg,
+          rgba(24, 144, 255, 0.3) 11px,
+          #fff 11px 13px,
+          rgba(24, 144, 255, 0.3) 13px
+        );
+        background-size: 16px 100%;
+        background-position: 0px;
+      }
+    }
+    .ant-progress.defaultColor-7.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: #ff3b30;
+      }
+    }
+
+    .ant-progress.defaultColor-7-alpha.ant-progress-status-success {
+      .ant-progress-bg {
+        background-color: #ff3b30;
+      }
+    }
+  }
+}
+
+.projectProgress {
+}

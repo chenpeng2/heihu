@@ -1,0 +1,39 @@
+.treeNodeContainer {
+  display: flex;
+  align-items: center;
+  .tree-icon {
+    top: -8px;
+    position: relative;
+  }
+  .tree-icon:hover {
+    color: #0dc7a3;
+  }
+  .content {
+    padding-left: 4px;
+    .title {
+      color: #000;
+    }
+    .text {
+      color: #9099a5;
+    }
+  }
+  .ant-popover-inner-content {
+    padding: 0 !important;
+  }
+}
+
+.menuContainer {
+  width: 500px;
+  max-height: 600px;
+  overflow: auto;
+  .menuItem {
+    padding: 7px 30px;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    &:hover {
+      background-color: #0dc7a3;
+    }
+  }
+}

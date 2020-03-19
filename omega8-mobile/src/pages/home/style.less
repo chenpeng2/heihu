@@ -1,0 +1,67 @@
+@import '../../static/style/var.less';
+
+.department-menu {
+    padding: 9px 8px;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+        margin: 9px 8px;
+        width: calc(50% - 18px);
+        padding: 16px;
+        box-sizing: border-box;
+        border: 1px solid #dcdcdc;
+        box-shadow: 0 0 2px rgba(0,0,0,0.10);
+        border-radius: 4px;
+        overflow: hidden;
+        height: 163px;
+        position: relative;
+    }
+    .name {
+        margin: 0px;
+        font-size: 16px;
+        color: #32363A;
+        font-weight: normal;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+    .remark {
+        display: flex;
+        line-height: 16px;
+        color: #6F7275;
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 16px;
+        width: calc(100% - 32px);
+        .strong {
+            font-size: 28px;
+            line-height: 1.3em;
+            color: @primary-color;
+        }
+    }
+    .icon-arrow-up {
+        position: relative;
+        top: -11px;
+        margin-right: 6px;
+    }
+    .green {
+        color: @positive-color;
+        &.icon-arrow-up{
+            border-bottom-color: @positive-color;
+        }
+    }
+    .red {
+        color: @navigate-color;
+        &.icon-arrow-up{
+            border-bottom-color: @navigate-color;
+        }
+    }
+    .sap-icon {
+        font-size: 33px;
+        color: @primary-color
+    }
+}

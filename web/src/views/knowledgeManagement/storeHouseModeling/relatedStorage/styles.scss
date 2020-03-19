@@ -1,0 +1,37 @@
+.tag {
+  border: 1px solid $borderGrey;
+  border-radius: 3px;
+  max-width: 108px;
+  padding: 1px 4px 2px 4px;
+  background-color: $grey;
+  display: inline-block;
+  margin-right: 5px;
+  margin: -2px 5px -2px 0;
+  height: 22px;
+  :global {
+    .anticon {
+      margin-left: 3px;
+      font-size: 12px;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.45);
+    }
+    .anticon:hover {
+      color: $black;
+      transition: all 0.5s;
+    }
+  }
+}
+.storeHouseList {
+  :global {
+    .ant-table-row-level-1 {
+      background-color: #fafafa !important;
+    }
+    .ant-input{
+      position: absolute;
+      width: 292px;
+      left: 4px;
+      top: 5px;
+      border-radius: 4px;
+    }
+  }
+}

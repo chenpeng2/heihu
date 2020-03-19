@@ -1,0 +1,85 @@
+.ganttComponent {
+  position: relative;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+
+  .timelineRow {
+    border-bottom: 1px solid #eaecf1;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+
+    .timelineItem {
+      display: flex;
+      flex-direction: column;
+      .dateItem {
+        padding: 0 16px;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid #eaecf1;
+        align-items: center;
+        border-right: 1px solid #eaecf1;
+      }
+      .timeItemContainer {
+        display: flex;
+        align-items: center;
+        .timeItem {
+          padding: 8px 14px;
+          height: 100%;
+          border-right: 1px solid #eaecf1;
+        }
+      }
+    }
+    .legendContainer {
+      display: flex;
+      align-items: center;
+      margin: 0 16px;
+      .title {
+        margin-right: 8px;
+      }
+    }
+
+    .timelineRow {
+      border-bottom: 1px solid #eaecf1;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+
+      .timelineItem {
+        display: flex;
+        flex-direction: column;
+        .dateItem {
+          padding: 0 16px;
+          display: flex;
+          justify-content: flex-start;
+          border-bottom: 1px solid #eaecf1;
+          align-items: center;
+          border-right: 1px solid #eaecf1;
+        }
+        .timeItemContainer {
+          display: flex;
+          align-items: center;
+          .timeItem {
+            padding: 8px 14px;
+            height: 100%;
+            border-right: 1px solid #eaecf1;
+          }
+        }
+      }
+    }
+    .timelineContainer {
+      overflow-x: auto;
+    }
+  }
+  .timelineContainer {
+    overflow-x: auto;
+  }
+
+  .intervalSelect {
+    position: fixed;
+    right: 40px;
+    z-index: 100;
+    width: 120px;
+  }
+}

@@ -1,0 +1,85 @@
+.ganttContainer {
+  background-color: #fff;
+  display: flex;
+  border: 1px solid #e8e8e8;
+  flex-direction: row;
+
+  .leftContainer {
+    box-shadow: 2px 2px 4px 0 rgba(142, 152, 174, 0.2);
+    background-color: #fafafa;
+    border-right: 1px solid #e8e8e8;
+
+    .filterContainer {
+      background-color: #fafafa;
+      flex: 1;
+      padding: 10px;
+      border-right: 1px solid #f3f3f3;
+    }
+
+    .treeContainer {
+      flex: 1;
+      border-right: 1px solid #f3f3f3;
+    }
+  }
+
+  .legendContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 16px;
+    .title {
+      margin-right: 8px;
+      color: #9b9b9b;
+    }
+  }
+
+  .timelineRow {
+    border-bottom: 1px solid #f3f3f3;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+
+    .timelineItem {
+      display: flex;
+      flex-direction: column;
+      .dateItem {
+        padding: 0 16px;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid #f3f3f3;
+        align-items: center;
+        border-right: 1px solid #f3f3f3;
+      }
+      .timeItemContainer {
+        display: flex;
+        align-items: center;
+        .timeItem {
+          padding: 0 14px;
+          border-right: 1px solid #f3f3f3;
+        }
+      }
+    }
+    .timelineContainer {
+      overflow-x: auto;
+    }
+
+    .intervalSelect {
+      position: fixed;
+      right: 40px;
+      z-index: 100;
+      width: 120px;
+    }
+  }
+}
+
+.PopoverContainer {
+  padding: 8px 4px;
+  :global {
+    .ant-checkbox-group-item {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

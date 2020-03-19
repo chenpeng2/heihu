@@ -1,0 +1,25 @@
+.FolderContainer {
+  padding: 10px 0 0 10px;
+  display: flex;
+  flex-direction: row;
+
+  .leftContainer {
+    flex: 1;
+    background-color: #fafafa;
+    border: 1px solid #e8e8e8;
+  }
+  .rightContainer {
+    flex: 4;
+  }
+}
+
+:global {
+  .rc-tree-node-selected {
+    background-color: transparent;
+    border: none;
+  }
+  .rc-tree-treenode-selected {
+    background-color: rgba(2, 185, 128, 0.1);
+    border: 1px solid rgb(2, 185, 128);
+  }
+}

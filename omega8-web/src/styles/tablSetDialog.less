@@ -1,0 +1,75 @@
+.bl-dialog{
+    .MuiDialog-paperWidthXs {
+        max-width: 544px;
+        height: 500px;
+    }
+}
+.dialog-content {
+    .MuiTableCell-root {
+        padding: 5px 10px;
+    }
+}
+
+.edit-table-content {
+    .MuiTableCell-root {
+        padding: 0 10px !important; 
+    }
+}
+
+.dialog-content {
+    max-height: 500px;
+    overflow-y: auto;
+    min-height: 200px;
+    .ant-table-tbody > tr > td {
+        padding: 7px 5px;
+    }
+}
+
+.setting-tab-content {
+    display: none;
+    min-height: 260px;
+    .tab-title {
+        padding: 5px 20px;
+        font-weight: 500;
+    }
+    .tab-list {
+        .list-item {
+            display: flex;
+            padding: 5px 0px !important;
+            border-bottom: solid 1px #eeeeee;
+            align-items: left;
+            .MuiFormControl-marginNormal {
+                margin: 0;
+            }
+            label {
+                margin-right: 20px;
+                flex: 1;
+            }
+        }
+    }
+}
+
+.dialog-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+        text-align: center;
+        flex: 1;
+    }
+    .MuiButton-outlinedPrimary {
+        color: @light-active;
+        border: 1px solid @light-active;
+    }
+    button:hover, .active {
+        color: #ffffff;
+        background-color: @light-active;
+    }
+    .title-text {
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        font-size: 16px;
+    }
+}

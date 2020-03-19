@@ -1,0 +1,31 @@
+.chartContainer {
+  .titleContainer {
+    display: flex;
+    background-color: rgba(227, 230, 236, 0.5);
+    align-items: center;
+    position: relative;
+  }
+  .contentContainer {
+    padding: 0;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eaecf1;
+    position: relative;
+  }
+}
+.gantt-qc-form-wrapper {
+  .ant-modal-body {
+    .modal-body-form {
+      border: none;
+      background: #fff;
+      margin: 0 50px 0 50px;
+    }
+  }
+}
+
+.cannotDrop {
+  border: 1px dashed #f93433;
+}
+
+.canDrop {
+  border: 1px dashed #0dc7a3;
+}

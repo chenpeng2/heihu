@@ -1,0 +1,23 @@
+development:
+  API: http://localhost:9090
+  SUBSCRIPTION_URL: ws://localhost:9090/subscriptions
+
+feat:
+  API: https://api2-feature.blacklake.cn
+  SUBSCRIPTION_URL: wss://api2-feature.blacklake.cn/subscriptions
+
+dev:
+  API: https://api2-dev.blacklake.cn
+  SUBSCRIPTION_URL: wss://api2-dev.blacklake.cn/subscriptions
+
+test:
+  API: https://api2-test.blacklake.cn
+  SUBSCRIPTION_URL: wss://api2-test.blacklake.cn/subscriptions
+
+demo:
+  API: https://api2-staging.blacklake.cn
+  SUBSCRIPTION_URL: wss://api2-staging.blacklake.cn/subscriptions
+
+production:
+  API: https://api2.blacklake.cn
+  SUBSCRIPTION_URL: wss://api2.blacklake.cn/subscriptions

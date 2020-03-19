@@ -1,0 +1,44 @@
+.pageStyle {
+  padding: 20px 20px 20px 40px;
+  :global {
+    .ant-table .ant-table-footer {
+      border-bottom: none;
+    }
+    .ant-table-thead > tr > th.ruleItemHeader {
+      padding: 12px 0 !important;
+    }
+  }
+}
+
+.ruleTtemsTable {
+  :global {
+    td {
+      padding: 0 !important;
+      padding-bottom: 10px !important;
+      padding-top: 15px !important;
+      border-bottom: 1px solid #e8e8e8 !important;
+    }
+  }
+}
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  p {
+    font-size: 16px;
+    text-indent: -20px;
+  }
+}
+
+.buttonStyle {
+  width: 114px;
+  height: 32px;
+  margin-right: 40px;
+}
+
+.baseFormItem {
+  width: 300px;
+  height: 28px;
+}

@@ -1,0 +1,27 @@
+.notificationPageFooter {
+  display: flex;
+  padding: 20px;
+  div {
+    flex: 1;
+  }
+}
+
+.readAll {
+  color: $blacklakeGreen;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.notificationPage {
+  color: rgba($color: #000, $alpha: 0.4);
+  font-size: 14px;
+  :global {
+    .ant-card {
+      border-bottom: 1px solid #F1F2F5;
+      cursor: pointer;
+    }
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+}

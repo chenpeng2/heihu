@@ -1,0 +1,37 @@
+.searchHeader {
+  margin: 20px;
+  color: $fontSub;
+  & > * {
+    margin-right: 10px;
+  }
+}
+.detailLogHeader {
+  margin: 20px;
+  font-size: 16px;
+}
+.operationLogWrapper {
+  :global {
+    .ant-table-tbody > tr:hover > td {
+      background: #fff;
+    }
+  }
+}
+.recordContainer {
+  :global {
+    .ant-table-wrapper {
+      min-width: 300px !important;
+      padding: 0 20px;
+    }
+  }
+}
+.prodTaskDetail {
+  margin-bottom: 100px;
+  :global {
+    .ant-table-thead th:last-child {
+      text-align: right;
+    }
+  }
+}
+.titleSmallMargin {
+  margin-left: 8px;
+}

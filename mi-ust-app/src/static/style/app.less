@@ -1,0 +1,107 @@
+@import '~antd/dist/antd.css';
+.App{
+    header {
+      z-index: 3;
+      position: fixed;
+      top: 0;
+      background-color: #354A5F;
+      height: 44px;
+      width: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 36px;
+      .top-title {
+        text-align: center;
+        flex: 2;
+      }
+      .profile-content .avatar {
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+      }
+      .setting-popup {
+        background-color: #ffffff;
+        border: solid 1px #eeeeee;
+        position: absolute;
+        right: 30px;
+        color: #6a6d70;
+        top: 40px;
+        width: 300px;
+        border-radius: 5px;
+        border: solid 1px #ddd;
+        width: 417px;
+        .popup-content {
+          padding: 14px 18px;
+          .top {
+            display: flex;
+            padding-bottom: 20px;
+            align-items: center;
+          }
+          .avatar-info {
+            font-size: 16px;
+            color: #515559;
+            margin-left: 20px;
+            position: relative;
+            width: 100%;
+            .logout-button {
+              // position: absolute;
+              // right: 0px;
+              // bottom: 0px;
+              background-color: #ffffff;
+              border: solid 1px #0A6ED1;
+              color: #0A6ED1;
+              margin-top: 15px;
+              height: 28px;
+              border-radius: 4px;
+              font-size: 14px;
+            }
+          }
+          .avatar {
+            width: 74px;
+            height: 100%;
+          }
+  
+        }
+        .bottom {
+          display: flex;
+          align-items: center;
+          padding: 10px 0;
+          .sap-icon {
+            margin-right: 10px;
+            font-size: 20px;
+          }
+          .icon-btn {
+            display: flex;
+            align-items: center;
+            color: #515559;
+            justify-content: center;
+            i {
+              display: block;
+              margin: 0 10px;
+            }
+          }
+          .user-info {
+            align-items: center;
+            display: flex;
+            &:first-child {
+              width: 65%;
+            }
+          }
+        }
+      }
+    }
+    .header-navbar {
+      z-index: 2;
+      position: fixed;
+      top: 45px;
+      width: 100%;
+      padding: 0 36px;
+      display: flex;
+      box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 8px 0 rgba(0,0,0,.3);
+    }
+    .App-contentMain{
+      margin-top: 90px;
+    }
+  }

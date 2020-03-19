@@ -1,0 +1,210 @@
+@import '../styles/common/basic.less';
+@import '../styles/font.less';
+@import '~bootstrap-table/dist/themes/materialize/bootstrap-table-materialize.min.css';
+@import '~bootstrap-table/dist/bootstrap-table.min.css';
+
+// changeboostrap style 
+.bootstrap-table .table > tbody > tr.groupBy {
+  cursor: pointer;
+}
+
+.bootstrap-table .table > tbody > tr.hidden + tr.detail-view {
+  display: none;
+}
+
+//main panel style
+.subtitle-panel {
+  position: relative;
+  padding: 20px 36px 26px;
+  width: 100%;
+  background-color: #ffffff;
+  -moz-box-shadow: 10px 10px 5px #888888;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 8px 0 rgba(0,0,0,0.30);
+  .filter-content {
+      margin-top: 16px;
+      display: flex;
+      .filter-item {
+          margin-right: 24px;
+          .lable {
+              color: #666666;
+              font-size: 14px;
+              //margin-bottom: 5px;
+              margin-bottom: 7px;
+          }
+          svg {
+              display: inline-block;
+              color: @light-normal;
+          }
+          .ant-select-selection--single {
+              position: relative;
+              height: 26px;
+              cursor: pointer;
+              border-radius: 0;
+              .ant-select-selection__rendered {
+                  line-height: 24px;
+              }
+          }
+      }
+      button {
+          height: 26px;
+          width: 69px;
+          border-radius: 4px;
+          margin-top: 28px;
+      }
+  }
+}
+
+.ant-select-selection--multiple {
+  min-height: 26px;
+  margin-bottom: 0;
+  border-radius: 0;
+  .ant-select-selection__rendered {
+      line-height: 26px;
+     & > ul > li {
+          height: 20px;
+          margin-top: 3px;
+          line-height: 20px;
+      }
+  }
+}
+.ant-input {
+  height: 26px;
+  border-radius: 0;
+}
+
+.main-panel-dark {
+  //background-color: @border-normal;
+  padding: 16px 20px 16px 36px;
+}
+
+.main-panel-light {
+  padding: 60px 20px 0 36px;
+  width: 100%;
+}
+
+header {
+  background-color: @primary-bg-blue; 
+  height: 44px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 @container-margin-big-screen;
+  .top-title {
+    text-align: center;
+  }
+}
+.ant-menu-item, .ant-menu-submenu-title {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0 5px;
+  //margin-right: 32px;
+}
+
+.header-navbar {
+  padding: 0 @container-margin-big-screen;
+  display: flex;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 8px 0 rgba(0,0,0,0.30);
+  .nav-tab {
+    padding: 10px 20px 10px 0px;
+    margin-right: @container-margin-big-screen;
+    color: @subtitle-text-grey !important;
+    a {
+      color: @subtitle-text-grey !important;
+    }
+  }
+}
+
+.bottom-botton-panel {
+  position: absolute;
+  bottom: -10px;
+  display: flex;
+  width:calc(~"100% - 36px");
+  // width: calc(~"100%-36px");
+  .button-panel {
+    margin: 0 auto;
+    display: flex;
+    .button {
+      background-color: #fff;
+      padding: 1px 5px;
+      margin: 0 auto;
+      border: solid 1px @border-header;
+      border-radius: 4px;
+      margin-right: 10px;
+      &:nth-child(0) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+}
+
+// charts style
+.charts-continer {
+  display: flex;
+  margin-bottom: @panel-margin-big-screen;
+  .chart-item-continer {
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.10), 0 2px 8px 0 rgba(0,0,0,0.10);
+      background-color: #ffffff;
+      margin-right: @panel-margin-big-screen;
+      border-radius: 4px;
+      padding: 10px;
+  }
+  // background-color: @primary-bg-blue;
+  &:hover{
+      cursor: pointer;
+  }
+}
+
+.dashboard-continer {
+  display: flex;
+  margin-bottom: @panel-margin-big-screen;
+  .dashboard-item-panel {
+      font-family: "Roboto";
+      border-radius: 4px;
+      background-color: #ffffff;
+      margin-right: @panel-margin-big-screen;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.10), 0 2px 8px 0 rgba(0,0,0,0.10);
+      .title {
+          padding: 10px;
+          color: @primary-text-normal;
+          font-size: 16px;
+          .time-text {
+              color: @time-text-color;
+              font-size: 14px;
+          }
+      }
+      .item-top {
+        display: flex;
+        align-items: center;
+        .range {
+          font-size: 36px;
+          font-weight: 300;
+          margin-left: 30px;
+          img {
+            width: 24px;
+            height: auto;
+            margin-right: 10px;
+          }  
+        }  
+      }
+      .value-text {
+          border-top: solid 1px @border-header;
+          text-align: center;
+          font-size: 48px;
+          font-weight: 300;
+          &.positive-text {
+              color: @positive-color;
+          }
+          &.negative-text {
+              color: @negative-color;
+          }
+      }
+     
+  }
+}
+
+
+
+

@@ -1,0 +1,221 @@
+{
+  "tree": [
+    {
+      "code": "WO090405-0513zwl3",
+      "materialCode": "0513zwl3",
+      "materialName": "0513总物料3",
+      "materialUnit": "吨",
+      "materialDesc": "验证注塑计划工单第3个物料验证注塑计划工单第3个物料验证注塑计划工单第3个物料验证注塑计划工单第3个物料",
+      "planAmount": 20.0,
+      "canUseInventory": 0,
+      "amount": 20.0,
+      "processRouteCode": null,
+      "mbomVersion": null,
+      "ebomVersion": "eb0529-012",
+      "parentSeq": [
+        {
+          "processSeq": "1",
+          "processCode": "0000000029",
+          "processName": "0816工序1",
+          "inputMaterials": null,
+          "deliverable": null
+        },
+        {
+          "processSeq": "2",
+          "processCode": "0000000030",
+          "processName": "0816工序2",
+          "inputMaterials": null,
+          "deliverable": null
+        }
+      ],
+      "children": [
+        {
+          "code": "WO090405-0522zwl1",
+          "materialCode": "0522zwl1",
+          "materialName": "0522总物料1",
+          "materialUnit": "kg",
+          "materialDesc": "32342334234234433",
+          "planAmount": 20.0,
+          "canUseInventory": 0,
+          "amount": 20.0,
+          "processRouteCode": null,
+          "mbomVersion": null,
+          "ebomVersion": "0522eb1.0",
+          "parentSeq": [],
+          "children": []
+        },
+        {
+          "code": "WO090405-0522zwl2",
+          "materialCode": "0522zwl2",
+          "materialName": "0522总物料2",
+          "materialUnit": "kg",
+          "materialDesc": "2323233232",
+          "planAmount": 20.0,
+          "canUseInventory": 0,
+          "amount": 20.0,
+          "processRouteCode": null,
+          "mbomVersion": null,
+          "ebomVersion": "eb1.1",
+          "parentSeq": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "WO090405-glq#001",
+      "materialCode": "glq#001",
+      "materialName": "glq#001",
+      "materialUnit": "kg",
+      "materialDesc": "",
+      "planAmount": 20.0,
+      "canUseInventory": 60,
+      "amount": 0,
+      "processRouteCode": null,
+      "mbomVersion": null,
+      "ebomVersion": "0618001",
+      "parentSeq": [
+        {
+          "processSeq": "1",
+          "processCode": "0000000029",
+          "processName": "0816工序1",
+          "inputMaterials": null,
+          "deliverable": null
+        },
+        {
+          "processSeq": "2",
+          "processCode": "0000000030",
+          "processName": "0816工序2",
+          "inputMaterials": null,
+          "deliverable": null
+        }
+      ],
+      "children": [
+        {
+          "code": "WO090405-glq#002",
+          "materialCode": "glq#002",
+          "materialName": "glq#002",
+          "materialUnit": "Kg",
+          "materialDesc": "",
+          "planAmount": 0.0,
+          "canUseInventory": 0,
+          "amount": 0.0,
+          "processRouteCode": null,
+          "mbomVersion": null,
+          "ebomVersion": "v0713001",
+          "parentSeq": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "WO090405-apple001",
+      "materialCode": "apple001",
+      "materialName": "apple001名称",
+      "materialUnit": "kg",
+      "materialDesc": "apple001apple001apple001",
+      "planAmount": 20.0,
+      "canUseInventory": 0,
+      "amount": 20.0,
+      "processRouteCode": null,
+      "mbomVersion": null,
+      "ebomVersion": "1212003",
+      "parentSeq": [
+        {
+          "processSeq": "1",
+          "processCode": "0000000029",
+          "processName": "0816工序1",
+          "inputMaterials": null,
+          "deliverable": null
+        },
+        {
+          "processSeq": "2",
+          "processCode": "0000000030",
+          "processName": "0816工序2",
+          "inputMaterials": null,
+          "deliverable": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "code": "WO090405-0831wl1",
+      "materialCode": "0831wl1",
+      "materialName": "0831物料1",
+      "materialUnit": "吨",
+      "materialDesc": "测试",
+      "planAmount": 20.0,
+      "canUseInventory": 70,
+      "amount": 0,
+      "processRouteCode": "0000000106",
+      "mbomVersion": null,
+      "ebomVersion": "eb0831-001",
+      "parentSeq": [
+        {
+          "processSeq": "1",
+          "processCode": "0000000029",
+          "processName": "0816工序1",
+          "inputMaterials": null,
+          "deliverable": null
+        },
+        {
+          "processSeq": "2",
+          "processCode": "0000000030",
+          "processName": "0816工序2",
+          "inputMaterials": null,
+          "deliverable": null
+        }
+      ],
+      "children": []
+    }
+  ],
+  "topWorkOrder": {
+    "selectType": "mbom",
+    "type": 1,
+    "code": "0827jhgd001",
+    "amount": 10,
+    "materialUnit": "pcs",
+    "productBatchType": 1,
+    "priority": 10,
+    "planBeginTime": "1566873741000",
+    "planEndTime": "1567219338000",
+    "mbomVersion": "wwq组件分配是",
+    "attachments": [],
+    "materialCode": "08208C050441",
+    "plannerId": ["16"],
+    "managerId": ["16"],
+    "auditorIds": null,
+    "taskAuditorIds": null,
+    "parentSeq": null,
+    "customFields": [
+      { "name": "a#!", "content": "" },
+      { "name": "b 3", "content": "" },
+      { "name": "c d", "content": "" },
+      { "name": "ab", "content": "" }
+    ]
+  },
+  "return": [
+    {
+      "code": "0827jhgd001-0820wl1",
+      "materialCode": "0820wl1",
+      "materialName": "0820物料1",
+      "materialUnit": "pcs",
+      "materialDesc": "120.00*720.00*2.00*0.15+4.00+1.00mm，面膜型号：TWG15361-D10，扣型：DL 400，PE膜颜色：A扣灰，PE LOGO：ISOCORE，PE膜底纹：蜂巢纹，PE膜厚度：1.0，PE膜密度：HDPE，压纹：IRE，硬塑板颜色：银灰，硬塑板厚度：4.0，用料：全新料，是否打标：否，淋幕油种类：晶盾",
+      "planAmount": 9.25,
+      "canUseInventory": 0,
+      "amount": 9.25,
+      "processRouteCode": null,
+      "mbomVersion": "wwq组件分配是",
+      "ebomVersion": null,
+      "parentSeq": [
+        {
+          "processSeq": "1",
+          "processCode": "0000000157",
+          "processName": "test-清洁",
+          "inputMaterials": null,
+          "deliverable": null
+        }
+      ],
+      "children": []
+    }
+  ]
+}

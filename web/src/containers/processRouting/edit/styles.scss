@@ -1,0 +1,17 @@
+.editProcessRoute{
+  :global {
+    .ant-modal-body {
+
+    }
+    //.ant-table-wrapper {
+    //  width: 540px;
+    //}
+    //.ant-table-pagination {
+    //  display: none;
+    //}
+    .ant-select-selection--multiple {
+      max-height: 400px;
+      overflow: scroll;
+    }
+  }
+}

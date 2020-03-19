@@ -1,0 +1,151 @@
+.purchase-material-incoming-container {
+}
+
+.purchase-material-incoming-content-container {
+  padding: 15px 20px;
+}
+
+.purchase-material-incoming-content {
+  margin: 15px 0;
+}
+
+.purchase-material-incoming-cards-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.purchase-material-incoming-card {
+  width: 400px;
+  margin-right: 10px;
+  padding-bottom: 60px;
+  flex: 0 0 auto;
+}
+
+.purchase-material-incoming-content-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchase-material-incoming-content-header-view-toggle {
+  :global {
+    .ant-radio-group {
+      display: flex;
+
+      .ant-radio-button-wrapper {
+        height: 32px;
+        line-height: 33px;
+        width: 34px;
+        display: flex;
+        justify-content: center;
+        background-color: #fafafa;
+
+        i {
+          padding-right: 0 !important;
+          color: $deepGrey;
+        }
+      }
+
+      .ant-radio-button-wrapper-checked {
+        background-color: white;
+
+        i {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.purchase-material-incoming-content-title {
+  font-size: 16px;
+}
+
+.purchase-material-incoming-footer {
+  margin: 15px 20px;
+
+  button {
+    width: 114px;
+    margin-right: 72px;
+  }
+}
+
+.middle-select {
+  width: 150px;
+}
+
+.small-select {
+  width: 100px;
+}
+
+.select {
+  width: 200px;
+}
+
+.input {
+  width: 200px;
+}
+
+.middle-input {
+  width: 120px;
+}
+
+.inputNumber {
+  width: 130px;
+  border-radius: 3px;
+}
+
+.middle-inputNumber {
+  width: 110px;
+  margin-right: 10px;
+}
+
+.small-inputNumber {
+  width: 96px;
+  margin-right: 10px;
+}
+
+.small-select {
+  width: 80px;
+}
+
+.small-datePicker {
+  width: 140px;
+}
+
+.required-symbol {
+  font-size: 16px;
+  color: #ff3824;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.qrCode-and-amount-title {
+  display: flex;
+  align-items: center;
+}
+
+.card-container {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid $border;
+  background-color: $grey;
+}
+
+.card-container-content {
+  background-color: white;
+  border: 1px solid $border;
+  padding: 10px;
+  margin-top: 10px;
+  // margin: 0 10px 10px 10px;
+}
+
+.data-not-found {
+  margin: 0 auto;
+  color: $lightGrey;
+  padding: 20px 0;
+}
+
+.flex-inline-container {
+  display: flex;
+}

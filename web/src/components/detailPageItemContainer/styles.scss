@@ -1,0 +1,23 @@
+.detailPageItemContainerWrapper {
+  background-color: $white;
+  border: 1px solid $borderGrey;
+  width: 100%;
+}
+.detailPageItemContainerHeaderWrapper {
+  border-bottom: 1px solid $borderGrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $grey;
+}
+.detailPageItemContainerHeader {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.detailPageItemContainerContent {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+}

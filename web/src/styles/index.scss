@@ -1,0 +1,139 @@
+:global {
+  @media print {
+    .printHide {
+      display: none;
+    }
+
+    .printContainer {
+      display: block;
+    }
+  }
+
+  #root {
+    height: 100%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin: 0;
+  }
+
+  .display-inline-block {
+    display: inline-block;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    caret-color: $blacklakeGreen !important;
+
+    .material-name {
+      color: $darkGrey;
+    }
+
+    .material-name:hover {
+      color: $onionGreen;
+    }
+
+    .add-item {
+      height: 28px;
+      border: 1px dashed #edeef3;
+      line-height: 28px;
+      text-align: center;
+      background: $white;
+
+      .component-link {
+        color: $middleGrey;
+
+        &:hover {
+          color: $blacklakeGreen;
+        }
+      }
+    }
+
+    .form-footer-left {
+      margin-left: 110px;
+      justify-content: left;
+    }
+
+    .important-title {
+      height: 14px;
+      width: 4px;
+      display: inline-block;
+      background: $blacklakeGreen;
+      margin-right: 2px;
+      vertical-align: sub;
+    }
+
+    // 启用停用样式
+    @mixin switch {
+      padding: 0 6px;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .switch-open {
+      @include switch;
+      background: $primary;
+    }
+
+    .switch-close {
+      @include switch;
+      background: $error;
+    }
+
+    .error-tag {
+      @include switch;
+      background: rgba(255, 59, 48, 0.1);
+      color: rgba(255, 59, 48, 1);
+      cursor: default;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .child-gap>* {
+      margin-right: 10px;
+    }
+
+    .child-gap20>* {
+      margin-right: 20px;
+    }
+    .child-gap40>* {
+      margin-right: 40px;
+    }
+    .circle {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #000;
+      opacity: 0.6;
+      border-radius: 10px;
+      display: inline-block;
+      background: #fff;
+    }
+
+    .primary-color {
+      color: $primary;
+    }
+    .horizontal-center {
+      display: flex;
+      justify-content: center;
+    }
+    .vertical-center {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

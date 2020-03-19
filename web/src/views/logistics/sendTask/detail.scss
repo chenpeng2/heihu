@@ -1,0 +1,29 @@
+.wrapper {
+  margin-top: 20px;
+  padding-bottom: 0;
+  .log {
+   color: $fontSub;
+    margin: 0 20px 0 40px;
+  }
+  .number {
+    color: $fontSub;
+  }
+}
+
+.label {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  color: $fontSub;
+}
+.value {
+  margin-left: 20px;
+}
+
+.item {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+

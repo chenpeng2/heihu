@@ -1,0 +1,32 @@
+.relevancePerson {
+  :global {
+    .ant-form-item-control-wrapper {
+      width: auto;
+    }
+  }
+}
+
+.hidden-table {
+  :global {
+    .ant-table-placeholder {
+      display: none;
+    }
+  }
+}
+
+.logsHeader {
+  margin: 20px;
+  color: $fontSub;
+  & > * {
+    margin-right: 10px;
+  }
+}
+.logDetail {
+  .row {
+    margin-bottom: 20px;
+    & > span{
+      color: $fontSub;
+      margin-right: 20px;
+    }
+  }
+}

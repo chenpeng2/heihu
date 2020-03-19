@@ -1,0 +1,50 @@
+.materialList {
+  :global {
+    .ant-tooltip-inner {
+      max-width: 300px;
+      padding: 6px 8px;
+      text-align: left;
+      color: $content;
+      text-decoration: none;
+      background-color: $white;
+      border-radius: 2px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      min-height: 32px;
+    }
+    .anticon-exclamation-circle:before {
+      content: "\E62E";
+      color: $error;
+    }
+    .ant-popover-buttons button:hover {
+      color: rgba($content, 0.8);
+      border-color: $borderGrey;
+    }
+    .ant-btn.ant-btn-primary.ant-btn-sm {
+      display: none;
+    }
+    .ant-popover-title {
+      border-bottom: none;
+      padding: 5px 7px 4px;
+    }
+    .ant-popover-message {
+      padding: 4px 0 5px;
+    }
+    .ant-tooltip-placement-top .ant-tooltip-arrow {
+      border-top-color: $white;
+    }
+    .ant-tooltip-placement-bottom .ant-tooltip-arrow {
+      border-bottom-color: $white;
+    }
+    .ant-popover-message-title {
+      word-break: break-all;
+    }
+  }
+}
+
+.operationLine {
+  border-top: 1px solid $border;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+}

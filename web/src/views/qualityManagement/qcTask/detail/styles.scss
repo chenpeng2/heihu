@@ -1,0 +1,54 @@
+.operations {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 18px;
+    cursor: pointer;
+    color: $primary;
+  }
+}
+
+.detailTabs {
+  :global {
+    .ant-radio-button-wrapper span {
+      color: #cdcccd;
+    }
+    .ant-radio-button-wrapper.ant-radio-button-wrapper-checked span {
+      color: $primary;
+    }
+  }
+}
+
+.deleteModal {
+  :global {
+    .ant-confirm-body-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .ant-confirm-body {
+        width: 100%;
+        margin-bottom: 60px;
+        & > .anticon {
+          font-size: 36px;
+        }
+      }
+      .ant-confirm-btns {
+        .ant-btn {
+          width: 114px;
+          height: 32px;
+          line-height: 32px;
+          border-radius: 3px;
+          &:last-child {
+            background-color: $error;
+            border-color: $error;
+          }
+        }
+        button + button {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}

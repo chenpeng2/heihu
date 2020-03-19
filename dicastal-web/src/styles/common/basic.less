@@ -1,0 +1,40 @@
+@import './colors.less';
+
+@panel-margin-big-screen: 16px;
+@panel-margin-middle-screen: 8px;
+@panel-margin-little-screen: 4px;
+@container-margin-big-screen: 36px;
+
+@roboto-font-path: '../../asstes/fonts';
+ 
+.roboto-font(@type, @weight, @style) {
+    @font-face {
+        font-family: 'Roboto';
+        src: url('@{roboto-font-path}/72-@{type}.ttf') format('truetype');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+ 
+.roboto-font-one(@type, @weight, @style) {
+    .roboto-font('@{type}', @weight, @style);
+}
+ 
+.roboto-font-pair(@type, @weight) {
+    .roboto-font('@{type}', @weight, normal);
+    .roboto-font('@{type}', @weight, italic);
+}
+ 
+.roboto-font-one('Italic', 200, italic);
+.roboto-font-one('Regular', 400, normal);
+.roboto-font-pair('Light', 300);
+.roboto-font-pair('Bold', 700);
+.roboto-font-pair('Black', 900);
+
+
+.bl-main-continer {
+    // margin: 14px 48px;
+}
+
+
+

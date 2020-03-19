@@ -1,0 +1,365 @@
+.flt-left{
+  float: left;
+}
+.flt-right{
+  float: right;
+}
+.clearfix:after {
+  content: " ";
+  display: block;;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+//popOver视图
+.view-pop {
+  z-index: 1;
+  .ant-popover-content{
+    min-width:240px;
+    margin-left: 12px;
+    .ant-popover-inner-content{
+      padding:0;
+      .ant-list-items{
+        height: 300px;
+        overflow: scroll;
+        .ant-list-item{
+          padding:6px 12px;
+          cursor: pointer;
+          &:hover{
+            background:rgba(232,242,251,1);
+          }
+        }
+      }
+      .pop-footer{
+        border-top:1px solid #e8e8e8;
+        display: flex;
+        justify-content:flex-end;
+        padding:8px 0;
+        button{
+          margin-left: 8px;
+        };
+        button:last-child{
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+.ant-btn-primary{
+  background-color: #0A6ED1;
+  border-color: #0A6ED1;
+}
+.ant-btn-primary:hover, .ant-btn-primary:focus{
+  background-color: #0A6ED1;
+  border-color: #0A6ED1;
+}
+.ant-calendar-picker-container{
+  z-index: 19;
+}
+.MuiPopover-paper{
+  .MuiMenu-list{
+    padding:0;
+  }
+}
+//Modal视图
+.modal-view{
+  .ant-form-item{
+    margin-bottom:8px;
+    .ant-form-item-label{
+      height:16px;
+      line-height: 16px;
+    }
+  }
+  .ant-modal-body{
+    padding:24px 0 0 0;
+  }
+  .pop-footer{
+    border-top:1px solid #e8e8e8;
+    display: flex;
+    justify-content:flex-end;
+    padding:14px 0;
+    button{
+      margin-left: 8px;
+    }
+  }
+}
+.modal-view2{
+  .ant-modal-body{
+    padding:0;
+    .ant-input-search{
+      height:40px;
+      padding:0 24px 8px;
+      margin:8px 0;
+      border-bottom: 1px solid #e8e8e8;
+      .ant-input-suffix{
+        right:36px;
+        margin-top:-2px;
+      }
+    }
+  }
+}
+.App{
+  .appName{
+    min-width: 400px;
+    line-height: 44px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &>section{
+    display: block;
+    .header-navbar{
+      width:100%;
+    }
+    .ant-layout{
+      display: block;
+    }
+  }
+}
+.no-data-loading{
+  width: 100%;
+  text-align: center;
+}
+.no-data{
+  background-color: #efefef;
+}
+.chart-title{
+  .ant-select-selection--single{
+    height: 100%;
+    .ant-select-selection__rendered{
+      height: 100%;
+      .ant-select-selection-selected-value{
+        height: 100%;
+        line-height: 24px;
+      }
+    }
+  }
+}
+.App{
+  header {
+    z-index: 21;
+    position: fixed;
+    top: 0;
+    background-color: #354A5F;
+    height: 44px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    .top-title {
+      text-align: center;
+      flex: 2;
+    }
+    .profile-content .avatar {
+      cursor: pointer;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+    .setting-popup {
+      background-color: #ffffff;
+      border: solid 1px #eeeeee;
+      position: absolute;
+      right: 30px;
+      color: #6a6d70;
+      top: 40px;
+      width: 300px;
+      border-radius: 5px;
+      border: solid 1px #ddd;
+      width: 417px;
+      .popup-content {
+        padding: 14px 18px;
+        .top {
+          display: flex;
+          padding-bottom: 20px;
+          align-items: center;
+        }
+        .avatar-info {
+          font-size: 16px;
+          color: #515559;
+          margin-left: 20px;
+          position: relative;
+          width: 100%;
+          .logout-button {
+            // position: absolute;
+            // right: 0px;
+            // bottom: 0px;
+            background-color: #ffffff;
+            border: solid 1px #0A6ED1;
+            color: #0A6ED1;
+            margin-top: 15px;
+            height: 28px;
+            border-radius: 4px;
+            font-size: 14px;
+          }
+        }
+        .avatar {
+          width: 74px;
+          height: 100%;
+        }
+
+      }
+      .bottom {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        .sap-icon {
+          margin-right: 10px;
+          font-size: 20px;
+        }
+        .icon-btn {
+          display: flex;
+          align-items: center;
+          color: #515559;
+          justify-content: center;
+          i {
+            display: block;
+            margin: 0 10px;
+          }
+        }
+        .user-info {
+          align-items: center;
+          display: flex;
+          &:first-child {
+            width: 65%;
+          }
+        }
+      }
+    }
+  }
+  .header-navbar {
+    z-index: 20;
+    position: fixed;
+    top: 45px;
+    width: 100%;
+    padding: 0 36px;
+    display: flex;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+  }
+  .App-contentMain{
+    margin-top: 90px;
+  }
+}
+
+/*
+数据报告
+*/
+.data-report{
+  .subtitle-header{
+    display: flex;
+    justify-content: space-between;
+    button{
+      margin-right: 10px;
+    }
+  }
+}
+/*
+原始数据
+*/
+.detail-data{
+  .MuiPaper-root button:focus{
+    outline: none;
+  }
+  .MuiTableFooter-root button:focus {
+    outline: none;
+  }
+  .MuiTableFooter-root{
+    .MuiTableCell-root{
+      border-bottom: none;
+    }
+  }
+  .main-panel-light{
+    tfoot{
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+  }
+  .subtitle-header{
+    display: flex;
+    justify-content: space-between;
+    button{
+      margin-right: 10px;
+    }
+  }
+}
+/*
+分析工具
+*/
+.analysis{
+  .chart-title{
+    max-width: 2000px;
+    width: 94%;
+    margin: 4px 0 12px 5%;
+    .ant-select{
+      margin-top: 6px;
+    }
+  }
+}
+.big-table {
+  .MuiTableCell-root {
+    display: table-cell;
+    padding: 7px 6px 7px 12px;
+  }
+  .MuiTableCell-body {
+    //padding: 7px 6px 7px 12px;
+    padding: 10px 6px 10px 12px;
+  }
+  .MuiTablePagination-toolbar {
+    height: 36px;
+    min-height: 36px;
+  }
+  .MuiTableCell-head {
+    color: #32363A;
+    font-size: 0.8rem;
+    z-index: 1;
+  }
+  .MuiToolbar-gutters {
+    // &:nth-child(0) {
+    // display: none !important;
+  }
+  .MuiTableFooter-root {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+.popup-content{
+  .user-info{
+    font-size: 14px;
+  }
+}
+/*做媒体查询*/
+@media screen and (min-width:768px) and (max-width:1650px){
+  .charts-continer {
+    flex-direction: column;
+    .chart-item-continer{
+      width: 100%;
+      &.ms-sm12{
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .App .dashboard-continer .dashboard-item-panel .value-text{
+    font-size: 42px;
+  }
+}
+@media screen and (max-width:767px){
+  .charts-continer {
+    flex-direction: column;
+    .chart-item-continer{
+      width: 100%;
+      &.ms-sm12{
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .App .dashboard-continer .dashboard-item-panel .value-text{
+    font-size: 30px;
+  }
+}

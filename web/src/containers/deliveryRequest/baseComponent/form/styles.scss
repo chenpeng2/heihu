@@ -1,0 +1,18 @@
+:local {
+  .materialListForm {
+
+    :global {
+      .ant-table-header {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      .ant-table-body {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}

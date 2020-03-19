@@ -1,0 +1,122 @@
+.qcPlan-filter-for-list {
+}
+
+.qcPlan_action_for_list {
+  margin: 20px;
+}
+
+.qcPlan_qcConfig_tag {
+  :global {
+    .anticon-close {
+      margin-left: 2px;
+    }
+
+    margin: 2px;
+  }
+}
+
+.qcPlan_qcConfig_tag_selected {
+  border-color: $primary;
+
+  &,
+  > * {
+    color: $primary !important;
+  }
+}
+
+.qcPlan_add_qcConfig_tag {
+  background: #fff;
+  border-style: dashed;
+}
+
+.qcPlan_button {
+  border-radius: 3px;
+}
+
+.qcPlan_reset_link {
+  color: #8e98ae;
+  margin: 0 10px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.qc_plan_process_table {
+  margin: 0px;
+}
+
+.qcPlan_footer_wrapper {
+  margin: 30px 0 30px 120px;
+}
+
+.qcPlan_footer_button {
+  width: 114px;
+  height: 32px;
+  margin: 0 30px;
+}
+
+.qcPlan_qcConfig_panel {
+  padding: 20px;
+
+  > p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  :global {
+    .ant-form-item-label {
+      width: 110px;
+    }
+
+    .ant-form-item .ant-radio-group .ant-radio-wrapper {
+      width: 60px;
+      margin-right: 60px;
+    }
+  }
+}
+
+.hint_text {
+  padding: 0 10px;
+}
+
+.qcPlan_formItem_checkGroup {
+  width: 220px;
+}
+
+.qcPlan_formItem_checkbox,
+.qcPlan_formItem_radio {
+  width: 104px;
+  display: inline-block;
+}
+
+.createPlan {
+  padding: 20px;
+
+  > p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  :global {
+    .ant-form-item-label {
+      width: 110px;
+    }
+
+    .ant-form-item .ant-radio-group .ant-radio-wrapper {
+      width: 90px;
+      margin-right: 60px;
+    }
+  }
+
+  .top {
+    padding: 20px;
+  }
+}
+
+.editPlan {
+  padding: 20px;
+
+  > p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,39 @@
+.processForm {
+  border: 1px solid #e8e8e8;
+}
+.lighting {
+  animation: lighting 1s 1;
+}
+@keyframes lighting {
+  0% {
+    border: 1px solid #e8e8e8;
+  }
+  50% {
+    border: 1px solid #02b980;
+  }
+  100% {
+    border: 1px solid #e8e8e8;
+  }
+}
+
+.buttonOnShinning {
+  animation: buttonLighting 2s infinite;
+}
+
+@keyframes buttonLighting {
+  0% {
+    background: $blacklakeGreen;
+    color: $white;
+    border: 1px solid $blacklakeGreen;
+  }
+  50% {
+    background: #e4f6f0;
+    color: $blacklakeGreen;
+    border: 1px solid $white;
+  }
+  100% {
+    background: $blacklakeGreen;
+    color: $white;
+    border: 1px solid $blacklakeGreen;
+  }
+}

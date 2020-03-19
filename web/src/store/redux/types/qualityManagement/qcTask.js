@@ -1,0 +1,7 @@
+/** 质检管理 */
+
+/** 质检任务 */
+export const SET_BATCH_OPERATION = 'SET_BATCH_OPERATION';
+export const SET_ALL_CHECKED = 'SET_ALL_CHECKED';
+export const SET_SELECTED_ROWS = 'SET_SELECTED_ROW';
+export const SET_MUTIEXPORT_VISIBLE = 'SET_MUTIEXPORT_VISIBLE';

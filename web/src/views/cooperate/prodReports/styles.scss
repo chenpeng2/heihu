@@ -1,0 +1,71 @@
+.reportsList {
+  :global {
+    .ant-tabs-ink-bar,
+    .ant-tabs-ink-bar-animated {
+      background-color: transparent;
+    }
+    // .ant-table-thead > tr > th {
+    //   text-align: center;
+    // }
+    td.column-numeric,
+    th.column-numeric {
+      text-align: center;
+    }
+    .ant-table-fixed .onRowClick {
+      border-left: 5px solid $blacklakeGreen;
+      transition: 0s;
+    }
+    .ant-tabs-tab {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .ant-table-fixed .onRowClick {
+      border-left: 5px solid $blacklakeGreen;
+      transition: 0s;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+      border-bottom: 4px solid;
+    }
+    .ant-tabs-bar {
+      margin-bottom: 10px;
+      .ant-tabs-nav-container {
+        .ant-tabs-nav-wrap {
+          background: $oldLightGrey;
+          padding-left: 20px;
+          .ant-tabs-nav-scroll {
+            .ant-tabs-tab {
+              margin-right: 30px;
+              text-align: center;
+            }
+            .ant-tabs-tab-active {
+              padding-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contentHeader {
+    font-size: 14px;
+    padding: 0 20px 20px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .subContentHeader {
+    font-size: 14px;
+    padding: 20px 20px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .subCodeHeader {
+    color: $blacklakeGreen;
+    padding-left: 8px;
+  }
+  :global {
+  }
+}

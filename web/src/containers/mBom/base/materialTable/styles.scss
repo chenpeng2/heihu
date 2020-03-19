@@ -1,0 +1,16 @@
+.materialTableContainer {
+  border: 1px solid #e8e8e8;
+  padding: 0 12px;
+
+  .tableHeader {
+    background-color: #fafafa;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .row {
+    border-bottom: 1px solid #e8e8e8;
+    &:hover {
+      background-color: #e4f6f0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.treeNode {
+  position: relative;
+
+  :global {
+    .ant-select {
+      width: 100%
+    }
+    .ant-select-tree-node-content-wrapper {
+      position: absolute;
+      left: 4px;
+      top: 0px;
+      border-radius: 4px;
+    }
+  }
+}
+.firstStorageSelect {
+  :global {
+    .ant-input{
+      position: absolute;
+      width: 109%;
+      left: -4px;
+      border-radius: 4px;
+    }
+  }
+}
+.secondeStorageSelect {
+  :global {
+    .ant-input{
+      position: absolute;
+      width: 109%;
+      left: -4px;
+      border-radius: 4px;
+    }
+  }
+}

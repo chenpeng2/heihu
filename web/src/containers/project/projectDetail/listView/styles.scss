@@ -1,0 +1,37 @@
+.createdPlanContainer {
+  .ant-collapse {
+    .ant-collapse-item {
+      .ant-collapse-content {
+        padding: 0;
+        .ant-collapse-content-box {
+          .taskDetailContainer {
+            padding: 0 16px;
+          }
+        }
+      }
+    }
+  }
+}
+.createdReservationContainer {
+  //border-bottom: 1px solid $borderGrey;
+}
+.createdPurchaseContainer {
+  //border-bottom: 1px solid $borderGrey;
+}
+
+.card {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  :global {
+    .ant-tabs-content {
+      border-left: 1px solid $borderGrey;
+      border-right: 1px solid $borderGrey;
+      border-bottom: 1px solid $borderGrey;
+      background: #fff;
+      padding: 20px 10px 32px;
+    }
+    .ant-tabs-bar {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.inputSearch {
+  margin: 4px 20px 0px;
+  width: auto;
+  color: #fff;
+  &:hover {
+    :global {
+      .ant-input-prefix {
+        color: $primary;
+      }
+    }
+  }
+  :global(.ant-input-prefix) {
+    color: #ffffff80;
+  }
+  :global(.ant-input) {
+    border-color: transparent;
+    background: #ffffff20;
+    &::placeholder {
+      color: #ffffff80;
+    }
+    &:focus {
+      color: #fff;
+      //border-color: $primary;
+    }
+  }
+}

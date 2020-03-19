@@ -1,0 +1,99 @@
+.gcTimelineContainer {
+  :global {
+    .ant-timeline {
+      .ant-timeline-item {
+        left: 20px;
+        top: 18px;
+      }
+      .ant-timeline-item-content {
+        padding: 0 0 0 55px;
+      }
+      .ant-tree li .ant-tree-node-content-wrapper {
+        height: 100%;
+      }
+      .ant-tree > li:last-child {
+        padding-bottom: 0;
+      }
+      .ant-tree > li:first-child {
+        padding-top: 0;
+      }
+      .ant-tree li {
+        padding: 0 0 20px;
+      }
+      .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+        background-color: $white;
+      }
+      .ant-tree li .ant-tree-node-content-wrapper:hover {
+        background-color: $white;
+        cursor: auto;
+      }
+      .ant-tree li ul {
+        padding: initial;
+      }
+      .ant-tree-switcher_close {
+        margin-left: -28px;
+      }
+      .ant-tree-switcher_open {
+        margin-left: -28px;
+      }
+      .ant-tree-switcher_close::after {
+        font-size: 24px !important;
+        content: '\E645' !important;
+        font-weight: normal !important;
+        //margin-top: 10px;
+        color: $sliverGrey;
+      }
+      .ant-tree-switcher_close:hover::after {
+        color: $blacklakeGreen;
+      }
+      .ant-tree-switcher_open::after {
+        font-size: 24px !important;
+        content: '\E621' !important;
+        font-weight: normal !important;
+        color: $sliverGrey;
+        //margin-top: 10px;
+      }
+      .ant-tree-switcher_open:hover::after {
+        color: $blacklakeGreen;
+      }
+      .ant-timeline-item-head-custom {
+        top: auto;
+        left: auto;
+        padding: initial;
+        transform: translate(-38%, -38%);
+      }
+    }
+  }
+  .link {
+    color: $blacklakeGreen;
+    border-bottom: 1px solid $blacklakeGreen;
+    cursor: pointer;
+  }
+  .firstTimelineDot {
+    background-color: $blacklakeGreen;
+    color: $white;
+    border: 1px solid $blacklakeGreen;
+    border-radius: 12px;
+    padding: 5px 10px;
+  }
+  .timelineDot {
+    border: 1px solid $border;
+    color: $black;
+    border-radius: 12px;
+    padding: 5px 10px;
+  }
+}
+.qcReport {
+  :global {
+    .ant-spin-nested-loading {
+      width: 100%;
+    }
+  }
+}
+.batchSmallMargin {
+  margin-right: 6px;
+}
+.batch {
+  margin-right: 6px;
+  color: #9b9b9b;
+}

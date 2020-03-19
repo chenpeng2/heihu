@@ -1,0 +1,13 @@
+.reportsList {
+  :global {
+    .ant-table-tbody > tr {
+      & > td.column-numeric {
+        text-align: center;
+        padding-right: 8px;
+      }
+    }
+    .ant-table-thead th.column-numeric {
+      text-align: center;
+    }
+  }
+}

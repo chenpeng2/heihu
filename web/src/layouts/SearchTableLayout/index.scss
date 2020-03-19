@@ -1,0 +1,7 @@
+.logsHeader {
+  margin: 20px;
+  color: $fontSub;
+  & > * {
+    margin-right: 10px;
+  }
+}

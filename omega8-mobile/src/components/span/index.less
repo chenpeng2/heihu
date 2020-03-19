@@ -1,0 +1,71 @@
+@-webkit-keyframes antRotate{
+    to {
+        -webkit-transform: rotate(405deg);
+        transform: rotate(405deg)
+    }
+}
+@keyframes antRotate{
+    to{
+        -webkit-transform: rotate(405deg);
+        transform:rotate(405deg)
+    }
+}
+@-webkit-keyframes antSpinMove{
+    to{ opacity: 1 }
+}
+@keyframes antSpinMove{
+    to{ opacity: 1 }
+}
+.spin-dot {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+}
+.spin-dot-spin {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: antRotate 1.2s infinite linear;
+    animation: antRotate 1.2s infinite linear;
+}
+.spin-dot-item {
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-color: #1890ff;
+    border-radius: 100%;
+    -webkit-transform: scale(.75);
+    -ms-transform: scale(.75);
+    transform: scale(.75);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: .3;
+    -webkit-animation: antSpinMove 1s infinite linear alternate;
+    animation: antSpinMove 1s infinite linear alternate;
+    &:nth-child(1) {
+        top: 0;
+        left: 0;
+    }
+    &:nth-child(2) {
+        top: 0;
+        right: 0;
+        -webkit-animation-delay: .4s;
+        animation-delay: .4s;
+    }
+    &:nth-child(3) {
+        right: 0;
+        bottom: 0;
+        -webkit-animation-delay: .8s;
+        animation-delay: .8s;
+    }
+    &:nth-child(4) {
+        bottom: 0;
+        left: 0;
+        -webkit-animation-delay: 1.2s;
+        animation-delay: 1.2s;
+    }
+}

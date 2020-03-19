@@ -1,0 +1,1 @@
+export const uniqueType = (namespace, type) => `${namespace}/${type}`;

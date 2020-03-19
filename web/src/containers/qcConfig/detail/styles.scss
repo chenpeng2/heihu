@@ -1,0 +1,17 @@
+.detail {
+  margin-left: 20px;
+  font-size: 12px;
+  .row {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .row > span:first-child {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    margin-right: 20px;
+    text-align: right;
+    display: inline-block;
+    color: $fontSub;
+  }
+}

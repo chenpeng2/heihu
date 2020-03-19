@@ -1,0 +1,46 @@
+.action {
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  margin-left: 20px;
+}
+// 在 Modal下的formitem 布局
+:global(.ant-modal) {
+  .modalFormItem {
+    justify-content: center;
+    :global {
+      .ant-form-item-label {
+        display: flex;
+        align-items: center;
+        width: 100px;
+      }
+    }
+  }
+}
+
+:global {
+  body .ant-form {
+    .ant-form-item-label {
+      width: 120px; // 主要为了将宽度固定。来防止国际化的时候出现的样式问题
+      height: 40px;
+      display: flex;
+      margin-right: 20px;
+      justify-content: flex-end;
+      align-items: center;
+      line-height: 16px;
+      white-space: pre-wrap;
+    }
+  }
+  body .modal-body-form {
+    .ant-form-item-label {
+      width: 120px; // 主要为了将宽度固定。来防止国际化的时候出现的样式问题
+      height: 40px;
+      display: flex;
+      margin-right: 20px;
+      justify-content: flex-end;
+      align-items: center;
+      line-height: 16px;
+      white-space: pre-wrap;
+    }
+  }
+}

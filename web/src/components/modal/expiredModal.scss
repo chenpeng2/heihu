@@ -1,0 +1,43 @@
+.expiredModal {
+  top: 28%;
+
+  :global {
+    .ant-modal-body {
+      padding: 0;
+      height: 277px;
+    }
+    .ant-modal-content {
+      background-image: url('https://files.blacklake.cn/web/190120/expire.png');
+      background-color: transparent;
+      background-size: 100% 100%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
+    .ant-confirm-body-wrapper {
+      .ant-confirm-title {
+        font-size: 20px;
+        overflow: hidden;
+      }
+      .ant-confirm-content {
+        margin: 0;
+        font-size: 14px;
+      }
+      i.anticon {
+        display: none;
+      }
+      .ant-confirm-btns {
+        button {
+          width: 100px;
+          font-weight: 200;
+        }
+      }
+      padding: 50px 60px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+}

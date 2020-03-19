@@ -1,0 +1,40 @@
+.createSpareParts {
+  :global {
+    .ant-form-item {
+      padding-left: 40px;
+    }
+  }
+}
+.editSpareParts {
+  :global {
+    .ant-form-horizontal {
+      margin-left: 40px;
+    }
+  }
+}
+.searchHeader {
+  margin: 20px;
+  color: $fontSub;
+  & > * {
+    margin-right: 10px;
+  }
+}
+.detailLogHeader {
+  margin: 20px;
+  font-size: 16px;
+}
+.footer {
+  margin-top: 16px;
+  .cancel {
+    width: 114px;
+    margin-right: 60px;
+  }
+  .ok {
+    width: 114px;
+  }
+}
+.header {
+  font-size: 16px;
+  padding: 20px 0 30px 20px;
+  margin: 0;
+}

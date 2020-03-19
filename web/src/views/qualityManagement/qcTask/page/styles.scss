@@ -1,0 +1,30 @@
+.editQcTaskForm {
+  width: 550px;
+  height: 348px;
+  padding: 10px 0 10px 50px;
+
+  :global {
+    .ant-form-vertical .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.onlyReadText {
+  padding-right: 25px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.secondeStorageSelect {
+  :global {
+    .ant-input {
+      position: absolute;
+      width: 96%;
+      left: 4px;
+      top: 4px;
+      border-radius: 4px;
+    }
+  }
+}

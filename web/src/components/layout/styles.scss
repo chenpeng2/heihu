@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.title {
+  width: 120px;
+  text-align: right;
+  margin: 10px 20px 10px 0;
+  color: $middleGrey;
+}
+.content {
+  width: 240px;
+  margin: 10px 0;
+}

@@ -1,0 +1,30 @@
+.auditProcess {
+  :global {
+    .ant-steps-item-title {
+      .tip,
+      .auditPageTip {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .remark {
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title {
+      .tip,
+      .auditPageTip {
+        color: $primary;
+      }
+    }
+    .ant-steps-item-process > .ant-steps-item-content > .ant-steps-item-title .auditPageTip {
+      color: $primary;
+    }
+    .ant-steps-item-error > .ant-steps-item-content > .ant-steps-item-title {
+      color: black;
+      .tip,
+      .auditPageTip {
+        color: $error;
+      }
+    }
+  }
+}

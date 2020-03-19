@@ -1,0 +1,295 @@
+@import './var.less';
+
+body {
+  margin: 0;
+  font-family: San Francisco Pro, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  color: #3F3A3A;
+}
+
+ul, li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 0px;
+  margin: 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.tab-views {
+  font-size: 10px;
+}
+/* 设备自适应 图标 */
+.def-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 20px;
+  height: 20px;
+  width: 25px;
+  &.icon-home {
+    background-image: url('../image/Home.png');
+    html.device-pixel-ratio-2 & {
+      background-image: url('../image/Home@2x.png');
+    }
+    html.device-pixel-ratio-3 & {
+      background-image: url('../image/Home@3x.png');
+    }
+  }
+  &.icon-note {
+    background-image: url('../image/notification.png');
+    html.device-pixel-ratio-2 & {
+      background-image: url('../image/notification@2x.png');
+    }
+    html.device-pixel-ratio-3 & {
+      background-image: url('../image/notification@3x.png');
+    }
+  }
+  &.icon-user {
+    background-image: url('../image/Me.png');
+    html.device-pixel-ratio-2 & {
+      background-image: url('../image/Me@2x.png');
+    }
+    html.device-pixel-ratio-3 & {
+      background-image: url('../image/Me@3x.png');
+    }
+  }
+}
+.tab-link-active .def-icon {
+  &.icon-home {
+    background-image: url('../image/Home-on.png');
+    html.device-pixel-ratio-2 & {
+      background-image: url('../image/Home-on@2x.png');
+    }
+    html.device-pixel-ratio-3 & {
+      background-image: url('../image/Home-on@3x.png');
+    }
+  }
+  &.icon-note {
+    background-image: url('../image/notification-on.png');
+    html.device-pixel-ratio-2 & {
+      background-image: url('../image/notification-on@2x.png');
+    }
+    html.device-pixel-ratio-3 & {
+      background-image: url('../image/notification-on@3x.png');
+    }
+  }
+  &.icon-user {
+    background-image: url('../image/Me-on.png');
+    html.device-pixel-ratio-2 & {
+      background-image: url('../image/Me-on@2x.png');
+    }
+    html.device-pixel-ratio-3 & {
+      background-image: url('../image/Me-on@3x.png');
+    }
+  }
+}
+/* chip 风格 */
+.chip {
+  &.green-theme {
+    background: #8EF79F;
+  }
+  &.red-theme {
+    background: #FF9B9B;
+  }
+  &.yellow-theme {
+    background: #FFDB79;
+  }
+  &.gray-theme {
+    background: #687173;
+  }
+}
+
+/* 字体icon */
+@font-face {
+  font-family: 'sapicon';
+  src: url('../font/SAP-icons.ttf') format('truetype');
+}
+
+.sap-icon{
+  font-family: "sapicon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-filter:before {
+  content: "\e076";
+}
+
+.icon-table-column:before {
+  content: "\e27f";
+}
+.icon-add-product:before {
+  content: "\e142"
+}
+.icon-customer-and-supplier:before {
+  content: "\e177"
+}
+.icon-offsite-work:before {
+  content: "\e104"
+}
+.icon-fridge:before {
+  content: "\e031"
+}
+.icon-shipping-status:before {
+  content: "\e0b3"
+}
+.icon-org-chart:before {
+  content: "\e0d1"
+}
+.icon-slim-arrow-down:before {
+  content: "\e1ef"
+}
+.icon-dimension:before {
+  content: "\e176"
+}
+.icon-pending:before {
+  content: "\e019"
+}
+.icon-message-warning:before {
+  content: "\e201"
+}
+.icon-message-success:before {
+  content: "\e203"
+}
+.icon-process:before {
+  content: "\e0c7"
+}
+.icon-dropdown:before {
+  content: "\e1e2"
+}
+.icon-activity-item:before {
+  content: "\e1a9";
+}
+.icon-sales-order:before {
+  content: "\e0c3";
+}
+
+/* table */
+.default-table {
+  th {
+    border-top: 1px solid #D9D9D9;
+    background: #FAFAFA;
+    padding: 12px 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #6F7275;
+    line-height: 17px;
+  }
+  td {
+    border-top: 1px solid #D9D9D9;
+    text-align: center;
+    font-size: 14px;
+    color: #515559;
+    line-height: 22px;
+    padding: 10px 0;
+  }
+  .strong {
+    font-weight: 500
+  }
+}
+/* 常见图标 */
+.icon-arrow-up{
+	width: 0;
+  height: 0;
+	border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+  border-bottom-width: 11px;
+  border-bottom-style: solid;
+  font-size: 0px;
+}
+.icon-arrow-down{
+	width:0;
+	height:0;
+	border-right:50px solid transparent;
+	border-left:50px solid transparent;
+	border-top:50px solid #3A835B;
+}
+
+
+/* top, bottom border */
+.top-border, .bottom-border {
+  position: relative
+}
+.top-border:before, .bottom-border:after {
+  content: '';
+  position: absolute;
+  background-color: var(--f7-searchbar-border-color, var(--f7-bars-border-color));
+  display: block;
+  z-index: 15;
+  right: auto;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  transform-origin: 50% 100%;
+  transform: scaleY(calc(1 / var(--f7-device-pixel-ratio)));
+}
+.top-border:before {
+  top: 0;
+  bottom: auto
+}
+.bottom-border:after {
+  top: auto;
+  bottom: 0;
+}
+
+/* lengend  */
+.legend-box {
+  display: flex;
+  font-size: 12px;
+  color: #333;
+  flex-wrap: wrap;
+  .item {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .bar,
+  .line{
+    margin-right: 6px;
+    display: inline-block;
+    width: 16px;
+    background: #BAC1C4
+  }
+  .bar{
+    height: 8px;
+  }
+  .line{
+    height: 2px;
+  }
+}
+
+/* 自定义，重写第三方样式 */
+#root .navbar {
+  background: #445E75;
+  color: #fff;
+}
+.views {
+  height: calc(100% - 44px)!important;
+}
+
+.tab-box {
+  padding: 0px 6px;
+  font-size: 14px;
+  display: flex;
+  a {
+    color: #4E4E52;
+    padding: 10px 10px 11px 10px;
+    &.tab-link-active {
+      color: #0854A0;
+    }
+  }
+}

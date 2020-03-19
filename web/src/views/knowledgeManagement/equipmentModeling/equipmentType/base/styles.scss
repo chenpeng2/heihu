@@ -1,0 +1,60 @@
+.equipmentTypeBase {
+  :global {
+    .ant-form-item-label label{
+      color: $fontSub;
+    }
+    .resourceCategory div{
+      height: 100%;
+    }
+  }
+}
+
+.strategyConfig {
+  margin-left: -20px;
+  :global {
+    .ant-table-thead tr:first-child th span{
+      margin-left: 20px;
+    }
+    .ant-table-placeholder {
+      display: none;
+    }
+    .ant-table-tbody > tr > td {
+      padding-left: 30px;
+    }
+  }
+}
+
+.baseHeaders {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #000000;
+}
+
+.baseSetting {
+  padding-bottom: 20px; 
+}
+
+.deviceProp {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.configModal {
+  :global {
+    .ant-upload-list {
+      width: 300px;
+    }
+  }
+}
+
+.resourceCategory {
+  height: 40px;
+  width: 314px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
