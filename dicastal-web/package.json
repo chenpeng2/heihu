@@ -49,7 +49,7 @@
     "less-loader": "^5.0.0",
     "material-table": "^1.50.0",
     "mini-css-extract-plugin": "0.5.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "office-ui-fabric-react": "^5.135.3",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.2.1",
